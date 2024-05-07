@@ -8,20 +8,20 @@ import type {
 import type { ParseSettings } from '../../src/parseSettings';
 import { useProgramFromProjectService } from '../../src/useProgramFromProjectService';
 
-const mockCreateProjectProgram = jest.fn();
+const mockCreateProjectProgram = vi.fn();
 
-jest.mock('../../src/create-program/createProjectProgram', () => ({
+vi.mock('../../src/create-program/createProjectProgram', () => ({
   get createProjectProgram() {
     return mockCreateProjectProgram;
   },
 }));
 
-const mockGetProgram = jest.fn();
+const mockGetProgram = vi.fn();
 
 const currentDirectory = '/repos/repo';
 
 function createMockProjectService() {
-  const openClientFile = jest.fn();
+  const openClientFile = vi.fn();
   const service = {
     getDefaultProjectForFile: () => ({
       getLanguageService: () => ({
@@ -121,7 +121,7 @@ describe('useProgramFromProjectService', () => {
 
   it('throws an error when called more than the maximum allowed file count', () => {
     const { service } = createMockProjectService();
-    const program = { getSourceFile: jest.fn() };
+    const program = { getSourceFile: vi.fn() };
 
     mockGetProgram.mockReturnValueOnce(program);
 
@@ -177,7 +177,7 @@ If you absolutely need more files included, set parserOptions.EXPERIMENTAL_usePr
 
   it('returns a created program when hasFullTypeInformation is disabled, the file is both in the project service and allowDefaultProjectForFiles, and the service has a matching program', () => {
     const { service } = createMockProjectService();
-    const program = { getSourceFile: jest.fn() };
+    const program = { getSourceFile: vi.fn() };
 
     mockGetProgram.mockReturnValueOnce(program);
 
@@ -201,7 +201,7 @@ If you absolutely need more files included, set parserOptions.EXPERIMENTAL_usePr
 
   it('returns a created program when hasFullTypeInformation is disabled, the file is neither in the project service nor allowDefaultProjectForFiles, and the service has a matching program', () => {
     const { service } = createMockProjectService();
-    const program = { getSourceFile: jest.fn() };
+    const program = { getSourceFile: vi.fn() };
 
     mockGetProgram.mockReturnValueOnce(program);
 

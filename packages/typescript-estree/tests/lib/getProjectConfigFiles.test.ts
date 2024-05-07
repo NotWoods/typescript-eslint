@@ -1,12 +1,14 @@
 import path from 'path';
+import type * as fs from 'fs';
+import type { MockedFunction } from 'vitest';
 
 import { ExpiringCache } from '../../src/parseSettings/ExpiringCache';
 import { getProjectConfigFiles } from '../../src/parseSettings/getProjectConfigFiles';
 
-const mockExistsSync = jest.fn<boolean, [string]>();
+const mockExistsSync: MockedFunction<typeof fs.existsSync> = vi.fn();
 
-jest.mock('fs', () => ({
-  ...jest.requireActual('fs'),
+vi.mock('fs', async importOriginal => ({
+  ...(await importOriginal<typeof fs>()),
   existsSync: (filePath: string): boolean => mockExistsSync(filePath),
 }));
 
@@ -18,7 +20,7 @@ const parseSettings = {
 
 beforeEach(() => {
   parseSettings.tsconfigMatchCache.clear();
-  jest.clearAllMocks();
+  vi.clearAllMocks();
 });
 
 describe('getProjectConfigFiles', () => {
@@ -153,7 +155,7 @@ describe('getProjectConfigFiles', () => {
       expect(() =>
         getProjectConfigFiles(parseSettings, true),
       ).toThrowErrorMatchingInlineSnapshot(
-        `"project was set to \`true\` but couldn't find any tsconfig.json relative to './repos/repo/packages/package/file.ts' within './repos/repo'."`,
+        `[Error: project was set to \`true\` but couldn't find any tsconfig.json relative to './repos/repo/packages/package/file.ts' within './repos/repo'.]`,
       );
     });
 
@@ -163,7 +165,7 @@ describe('getProjectConfigFiles', () => {
       expect(() =>
         getProjectConfigFiles({ ...parseSettings, tsconfigRootDir: '/' }, true),
       ).toThrowErrorMatchingInlineSnapshot(
-        `"project was set to \`true\` but couldn't find any tsconfig.json relative to './repos/repo/packages/package/file.ts' within '/'."`,
+        `[Error: project was set to \`true\` but couldn't find any tsconfig.json relative to './repos/repo/packages/package/file.ts' within '/'.]`,
       );
     });
   });

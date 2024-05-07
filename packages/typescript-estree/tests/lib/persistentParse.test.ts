@@ -29,6 +29,7 @@ afterEach(() => {
   clearWatchCaches();
 
   // clean up the temporary files and folders
+  console.log(tmpDirs);
   tmpDirs.forEach(t => t.removeCallback());
   tmpDirs.clear();
 

@@ -50,7 +50,7 @@
     "postclean": "rimraf dist && rimraf _ts4.3 && rimraf coverage",
     "format": "prettier --write \"./**/*.{ts,mts,cts,tsx,js,mjs,cjs,jsx,json,md,css}\" --ignore-path ../../.prettierignore",
     "lint": "npx nx lint",
-    "test": "jest --coverage --runInBand --verbose",
+    "test": "vitest --coverage",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
@@ -67,13 +67,12 @@
     "@babel/code-frame": "*",
     "@babel/parser": "*",
     "glob": "*",
-    "jest": "29.7.0",
-    "jest-specific-snapshot": "^8.0.0",
     "make-dir": "*",
     "prettier": "^3.2.5",
     "rimraf": "*",
     "tmp": "*",
-    "typescript": "*"
+    "typescript": "*",
+    "vitest": "1.6.0"
   },
   "peerDependenciesMeta": {
     "typescript": {

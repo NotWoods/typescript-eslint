@@ -1,12 +1,13 @@
 import * as ts from 'typescript';
+import type * as tsServerLibrary from 'typescript/lib/tsserverlibrary';
 
 import { createProjectService } from '../../src/create-program/createProjectService';
 
-const mockReadConfigFile = jest.fn();
-const mockSetCompilerOptionsForInferredProjects = jest.fn();
+const mockReadConfigFile = vi.fn();
+const mockSetCompilerOptionsForInferredProjects = vi.fn();
 
-jest.mock('typescript/lib/tsserverlibrary', () => ({
-  ...jest.requireActual('typescript/lib/tsserverlibrary'),
+vi.mock('typescript/lib/tsserverlibrary', async importOriginal => ({
+  ...(await importOriginal<typeof tsServerLibrary>()),
   readConfigFile: mockReadConfigFile,
   server: {
     ProjectService: class {

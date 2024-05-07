@@ -2,7 +2,7 @@ import { createParseSettings } from '../../src/parseSettings/createParseSettings
 
 const projectService = { service: true };
 
-jest.mock('../../src/create-program/createProjectService', () => ({
+vi.mock('../../src/create-program/createProjectService', () => ({
   createProjectService: (): typeof projectService => projectService,
 }));
 

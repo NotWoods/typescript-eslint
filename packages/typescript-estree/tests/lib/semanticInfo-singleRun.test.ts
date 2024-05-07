@@ -1,6 +1,9 @@
 import glob = require('glob');
 import * as path from 'path';
 
+import type * as shared from '../../src/create-program/shared';
+import type * as useProvidedPrograms from '../../src/create-program/useProvidedPrograms';
+import type * as getWatchProgramsForProjects from '../../src/create-program/getWatchProgramsForProjects';
 import { getCanonicalFileName } from '../../src/create-program/shared';
 import { createProgramFromConfigFile as createProgramFromConfigFileOriginal } from '../../src/create-program/useProvidedPrograms';
 import {
@@ -21,7 +24,7 @@ const mockProgram = {
   },
 };
 
-jest.mock('../../src/ast-converter', () => {
+vi.mock('../../src/ast-converter', () => {
   return {
     astConverter(): unknown {
       return { estree: {}, astMaps: {} };
@@ -33,9 +36,9 @@ interface MockProgramWithConfigFile {
   __FROM_CONFIG_FILE__?: string;
 }
 
-jest.mock('../../src/create-program/shared.ts', () => {
+vi.mock('../../src/create-program/shared.ts', async importOriginal => {
   return {
-    ...jest.requireActual('../../src/create-program/shared.ts'),
+    ...(await importOriginal<typeof shared>()),
     getAstFromProgram(program: MockProgramWithConfigFile): unknown {
       if (
         program.__FROM_CONFIG_FILE__?.endsWith('non-matching-tsconfig.json')
@@ -49,31 +52,35 @@ jest.mock('../../src/create-program/shared.ts', () => {
   };
 });
 
-jest.mock('../../src/create-program/useProvidedPrograms.ts', () => {
-  return {
-    ...jest.requireActual('../../src/create-program/useProvidedPrograms.ts'),
-    createProgramFromConfigFile: jest
-      .fn()
-      .mockImplementation((configFile): MockProgramWithConfigFile => {
-        return {
-          // So we can differentiate our mock return values based on which tsconfig this is
-          __FROM_CONFIG_FILE__: configFile,
-          ...mockProgram,
-        };
-      }),
-  };
-});
+vi.mock(
+  '../../src/create-program/useProvidedPrograms.ts',
+  async importOriginal => {
+    return {
+      ...(await importOriginal<typeof useProvidedPrograms>()),
+      createProgramFromConfigFile: vi
+        .fn()
+        .mockImplementation((configFile): MockProgramWithConfigFile => {
+          return {
+            // So we can differentiate our mock return values based on which tsconfig this is
+            __FROM_CONFIG_FILE__: configFile,
+            ...mockProgram,
+          };
+        }),
+    };
+  },
+);
 
-jest.mock('../../src/create-program/getWatchProgramsForProjects', () => {
-  return {
-    ...jest.requireActual(
-      '../../src/create-program/getWatchProgramsForProjects',
-    ),
-    getWatchProgramsForProjects: jest.fn(() => [mockProgram]),
-  };
-});
+vi.mock(
+  '../../src/create-program/getWatchProgramsForProjects',
+  async importOriginal => {
+    return {
+      ...(await importOriginal<typeof getWatchProgramsForProjects>()),
+      getWatchProgramsForProjects: vi.fn(() => [mockProgram]),
+    };
+  },
+);
 
-const createProgramFromConfigFile = jest.mocked(
+const createProgramFromConfigFile = vi.mocked(
   createProgramFromConfigFileOriginal,
 );
 

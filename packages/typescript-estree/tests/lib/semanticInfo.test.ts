@@ -297,7 +297,7 @@ describe('semanticInfo', () => {
           badConfig,
         ),
       ).toThrowErrorMatchingInlineSnapshot(
-        `"Compiler option 'compileOnSave' requires a value of type boolean."`,
+        `[Error: Compiler option 'compileOnSave' requires a value of type boolean.]`,
       );
     });
   }

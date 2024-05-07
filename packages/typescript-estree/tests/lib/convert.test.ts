@@ -8,7 +8,7 @@ import { Converter } from '../../src/convert';
 
 describe('convert', () => {
   afterEach(() => {
-    jest.resetAllMocks();
+    vi.resetAllMocks();
   });
 
   function convertCode(code: string): ts.SourceFile {
@@ -298,9 +298,7 @@ describe('convert', () => {
     };
 
     it('warns on a deprecated property access when suppressDeprecatedPropertyWarnings is false', () => {
-      const emitWarning = jest
-        .spyOn(process, 'emitWarning')
-        .mockImplementation();
+      const emitWarning = vi.spyOn(process, 'emitWarning').mockImplementation();
       const esCallExpression = getEsCallExpression({
         suppressDeprecatedPropertyWarnings: false,
       });
@@ -315,9 +313,7 @@ describe('convert', () => {
     });
 
     it('does not warn on a subsequent deprecated property access when suppressDeprecatedPropertyWarnings is false', () => {
-      const emitWarning = jest
-        .spyOn(process, 'emitWarning')
-        .mockImplementation();
+      const emitWarning = vi.spyOn(process, 'emitWarning').mockImplementation();
       const esCallExpression = getEsCallExpression({
         suppressDeprecatedPropertyWarnings: false,
       });
@@ -331,9 +327,7 @@ describe('convert', () => {
     });
 
     it('does not warn on a deprecated property access when suppressDeprecatedPropertyWarnings is true', () => {
-      const emitWarning = jest
-        .spyOn(process, 'emitWarning')
-        .mockImplementation();
+      const emitWarning = vi.spyOn(process, 'emitWarning').mockImplementation();
       const esCallExpression = getEsCallExpression({
         suppressDeprecatedPropertyWarnings: true,
       });
