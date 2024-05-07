@@ -7,7 +7,7 @@ import { parse, parseForESLint } from '../../src/parser';
 
 describe('parser', () => {
   beforeEach(() => {
-    jest.clearAllMocks();
+    vi.clearAllMocks();
   });
 
   it('parse() should return just the AST from parseForESLint()', () => {
@@ -22,7 +22,7 @@ describe('parser', () => {
 
   it('parseAndGenerateServices() should be called with options', () => {
     const code = 'const valid = true;';
-    const spy = jest.spyOn(typescriptESTree, 'parseAndGenerateServices');
+    const spy = vi.spyOn(typescriptESTree, 'parseAndGenerateServices');
     const config: ParserOptions = {
       loc: false,
       comment: false,
@@ -50,7 +50,7 @@ describe('parser', () => {
 
   it('parseAndGenerateServices() should be called with options.errorOnTypeScriptSyntacticAndSemanticIssues overriden to false', () => {
     const code = 'const valid = true;';
-    const spy = jest.spyOn(typescriptESTree, 'parseAndGenerateServices');
+    const spy = vi.spyOn(typescriptESTree, 'parseAndGenerateServices');
     const config: ParserOptions = {
       loc: false,
       comment: false,
@@ -79,7 +79,7 @@ describe('parser', () => {
 
   it('`warnOnUnsupportedTypeScriptVersion: false` should set `loggerFn: false` on typescript-estree', () => {
     const code = 'const valid = true;';
-    const spy = jest.spyOn(typescriptESTree, 'parseAndGenerateServices');
+    const spy = vi.spyOn(typescriptESTree, 'parseAndGenerateServices');
     parseForESLint(code, { warnOnUnsupportedTypeScriptVersion: true });
     expect(spy).toHaveBeenCalledWith(code, {
       ecmaFeatures: {},
@@ -102,7 +102,7 @@ describe('parser', () => {
 
   it('analyze() should be called with options', () => {
     const code = 'const valid = true;';
-    const spy = jest.spyOn(scopeManager, 'analyze');
+    const spy = vi.spyOn(scopeManager, 'analyze');
     const config: ParserOptions = {
       loc: false,
       comment: false,
