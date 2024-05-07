@@ -83,6 +83,7 @@
     "@types/tmp": "^0.2.6",
     "@types/yargs": "^17.0.32",
     "@typescript-eslint/eslint-plugin-internal": "workspace:^",
+    "@vitest/coverage-istanbul": "^1.6.0",
     "console-fail-test": "^0.2.3",
     "cross-fetch": "^4.0.0",
     "cspell": "^8.6.1",
@@ -121,6 +122,7 @@
     "tsx": "*",
     "typescript": ">=4.7.4 <5.5.0",
     "typescript-eslint": "workspace:^",
+    "vitest": "1.6.0",
     "yargs": "17.7.2"
   },
   "resolutions": {
