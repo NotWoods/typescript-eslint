@@ -3,7 +3,8 @@
   "compilerOptions": {
     "composite": false,
     "target": "ES2022",
-    "rootDir": "."
+    "rootDir": ".",
+    "types": ["node", "vitest/globals"]
   },
   "include": ["src", "typings", "tests", "index.d.ts"],
   "references": [{ "path": "../utils/tsconfig.build.json" }]

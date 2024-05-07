@@ -5553,9 +5553,9 @@ __metadata:
     "@typescript-eslint/scope-manager": 7.8.0
     "@typescript-eslint/type-utils": 7.8.0
     "@typescript-eslint/utils": 7.8.0
-    jest: 29.7.0
     prettier: ^3.2.5
     rimraf: "*"
+    vitest: 1.6.0
   languageName: unknown
   linkType: soft
 
