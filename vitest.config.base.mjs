@@ -10,7 +10,7 @@ export default defineConfig({
       include: ['src/**/*.{js,jsx,ts,tsx}'],
       reporter: ['lcov'],
     },
-    setupFiles: ['console-fail-test/setup.js'],
+    // setupFiles: ['console-fail-test/setup.js'],
     include: ['./tests/**/*.{test,spec}.ts'],
   },
 });
