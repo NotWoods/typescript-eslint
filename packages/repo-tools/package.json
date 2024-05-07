@@ -12,7 +12,7 @@
     "generate-lib": "npx tsx ./src/generate-lib.mts",
     "lint": "npx nx lint",
     "postinstall-script": "npx tsx ./src/postinstall.mts",
-    "test": "npx jest --coverage",
+    "test": "npx vitest --coverage",
     "typecheck": "npx tsc -p tsconfig.json --noEmit"
   },
   "devDependencies": {
