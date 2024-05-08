@@ -36,7 +36,7 @@
     "clean-fixtures": "rimraf -g \"./src/**/fixtures/**/snapshots\"",
     "format": "prettier --write \"./**/*.{ts,mts,cts,tsx,js,mjs,cjs,jsx,json,md,css}\" --ignore-path ../../.prettierignore",
     "lint": "npx nx lint",
-    "test": "jest",
+    "test": "vitest",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "funding": {
@@ -49,15 +49,14 @@
     "@babel/eslint-parser": "*",
     "@babel/parser": "*",
     "@microsoft/api-extractor": "^7.43.0",
+    "@vitest/utils": "1.6.0",
     "glob": "*",
-    "jest": "29.7.0",
-    "jest-diff": "^29.7.0",
-    "jest-snapshot": "^29.7.0",
     "jest-specific-snapshot": "^8.0.0",
     "make-dir": "*",
     "prettier": "^3.2.5",
     "pretty-format": "*",
     "rimraf": "*",
-    "typescript": "*"
+    "typescript": "*",
+    "vitest": "1.6.0"
   }
 }

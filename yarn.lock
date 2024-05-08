@@ -5531,16 +5531,15 @@ __metadata:
     "@babel/eslint-parser": "*"
     "@babel/parser": "*"
     "@microsoft/api-extractor": ^7.43.0
+    "@vitest/utils": 1.6.0
     glob: "*"
-    jest: 29.7.0
-    jest-diff: ^29.7.0
-    jest-snapshot: ^29.7.0
     jest-specific-snapshot: ^8.0.0
     make-dir: "*"
     prettier: ^3.2.5
     pretty-format: "*"
     rimraf: "*"
     typescript: "*"
+    vitest: 1.6.0
   languageName: unknown
   linkType: soft
 
@@ -13649,14 +13648,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"make-dir@npm:*":
-  version: 5.0.0
-  resolution: "make-dir@npm:5.0.0"
-  checksum: 9f40f4756af5138ca3b138f9e8af144b0420516e96b0e079d816a173d2f69b2ef3425abf20e25764d222c0939a9fd2bce91dd26c22002a559cd6beaea5c994d2
-  languageName: node
-  linkType: hard
-
-"make-dir@npm:^4.0.0":
+"make-dir@npm:*, make-dir@npm:^4.0.0":
   version: 4.0.0
   resolution: "make-dir@npm:4.0.0"
   dependencies:

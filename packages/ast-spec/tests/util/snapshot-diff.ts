@@ -1,4 +1,4 @@
-import { diff } from 'jest-diff';
+import { diff } from '@vitest/utils/diff';
 import defaultPrinter from 'pretty-format';
 
 import * as NodeSerializer from './serializers/Node';

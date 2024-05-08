@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AST Fixtures List fixtures with AST differences 1`] = `
-[
+exports[`tests/fixtures.test.ts > AST Fixtures > List fixtures with AST differences 1`] = `
+Array [
   "declaration/ClassDeclaration/fixtures/abstract/fixture.ts",
   "declaration/ClassDeclaration/fixtures/declare/fixture.ts",
   "declaration/ClassDeclaration/fixtures/decorator-many/fixture.ts",
@@ -22,11 +22,13 @@ exports[`AST Fixtures List fixtures with AST differences 1`] = `
   "declaration/ExportAllDeclaration/fixtures/unnamed/fixture.ts",
   "declaration/ExportDefaultDeclaration/fixtures/anonymous-class/fixture.ts",
   "declaration/ExportDefaultDeclaration/fixtures/anonymous-function/fixture.ts",
+  "declaration/ExportDefaultDeclaration/fixtures/arrow-function-expression/fixture.ts",
   "declaration/ExportDefaultDeclaration/fixtures/class-expression/fixture.ts",
   "declaration/ExportDefaultDeclaration/fixtures/class/fixture.ts",
   "declaration/ExportDefaultDeclaration/fixtures/function/fixture.ts",
   "declaration/ExportDefaultDeclaration/fixtures/identifier/fixture.ts",
   "declaration/ExportDefaultDeclaration/fixtures/interface/fixture.ts",
+  "declaration/ExportDefaultDeclaration/fixtures/literal/fixture.ts",
   "declaration/ExportNamedDeclaration/fixtures/aliased/fixture.ts",
   "declaration/ExportNamedDeclaration/fixtures/class/fixture.ts",
   "declaration/ExportNamedDeclaration/fixtures/declare-function/fixture.ts",
@@ -132,6 +134,8 @@ exports[`AST Fixtures List fixtures with AST differences 1`] = `
   "element/AccessorProperty/fixtures/no-annotation-with-value/fixture.ts",
   "element/AccessorProperty/fixtures/with-annotation-no-value/fixture.ts",
   "element/AccessorProperty/fixtures/with-annotation-with-value/fixture.ts",
+  "expression/TSSatisfiesExpression/fixtures/array-array/fixture.ts",
+  "expression/TSSatisfiesExpression/fixtures/arrow-func-no-parentheses/fixture.ts",
   "expression/TSSatisfiesExpression/fixtures/arrow-func-with-parentheses/fixture.ts",
   "expression/TSSatisfiesExpression/fixtures/chained-satisfies/fixture.ts",
   "expression/TSSatisfiesExpression/fixtures/conditional-no-parentheses/fixture.ts",
@@ -144,6 +148,8 @@ exports[`AST Fixtures List fixtures with AST differences 1`] = `
   "expression/TSSatisfiesExpression/fixtures/object-object-inner-parentheses/fixture.ts",
   "expression/TSSatisfiesExpression/fixtures/object-object-outer-parentheses/fixture.ts",
   "expression/UpdateExpression/fixtures/valid-assignment/fixture.ts",
+  "jsx/JSXAttribute/fixtures/element-non-self-closing/fixture.tsx",
+  "jsx/JSXAttribute/fixtures/element-self-closing/fixture.tsx",
   "jsx/JSXNamespacedName/fixtures/component-dashed/fixture.tsx",
   "jsx/JSXNamespacedName/fixtures/component/fixture.tsx",
   "legacy-fixtures/accessor-decorators/fixtures/accessor-decorator-factory-instance-member/fixture.ts",
@@ -293,6 +299,7 @@ exports[`AST Fixtures List fixtures with AST differences 1`] = `
   "legacy-fixtures/basics/fixtures/optional-chain-with-non-null-assertion/fixture.ts",
   "legacy-fixtures/basics/fixtures/optional-chain-with-parens/fixture.ts",
   "legacy-fixtures/basics/fixtures/optional-chain/fixture.ts",
+  "legacy-fixtures/basics/fixtures/parenthesized-use-strict/fixture.ts",
   "legacy-fixtures/basics/fixtures/private-fields-in-in/fixture.ts",
   "legacy-fixtures/basics/fixtures/readonly-arrays/fixture.ts",
   "legacy-fixtures/basics/fixtures/readonly-tuples/fixture.ts",

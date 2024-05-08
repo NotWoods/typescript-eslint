@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AST Fixtures legacy-fixtures declare enum TSESTree - AST 1`] = `
+exports[`tests/fixtures.test.ts > AST Fixtures > legacy-fixtures > declare > enum > TSESTree - AST 1`] = `
 Program {
   type: "Program",
-  body: [
+  body: Array [
     TSEnumDeclaration {
       type: "TSEnumDeclaration",
       const: false,
       declare: true,
       id: Identifier {
         type: "Identifier",
-        decorators: [],
+        decorators: Array [],
         name: "Foo",
         optional: false,
 
@@ -20,13 +20,13 @@ Program {
           end: { column: 16, line: 3 },
         },
       },
-      members: [
+      members: Array [
         TSEnumMember {
           type: "TSEnumMember",
           computed: false,
           id: Identifier {
             type: "Identifier",
-            decorators: [],
+            decorators: Array [],
             name: "Bar",
             optional: false,
 
@@ -48,7 +48,7 @@ Program {
           computed: false,
           id: Identifier {
             type: "Identifier",
-            decorators: [],
+            decorators: Array [],
             name: "Baz",
             optional: false,
 
