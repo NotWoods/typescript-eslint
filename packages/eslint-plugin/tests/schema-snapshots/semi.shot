@@ -1,51 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rule schemas should be convertible to TS types for documentation purposes semi 1`] = `
+exports[`tests/schemas.test.ts > Rule schemas should be convertible to TS types for documentation purposes > semi 1`] = `
 "
 # SCHEMA:
 
 {
-  "anyOf": [
+  \\"anyOf\\": [
     {
-      "items": [
+      \\"items\\": [
         {
-          "enum": ["never"]
+          \\"enum\\": [\\"never\\"]
         },
         {
-          "additionalProperties": false,
-          "properties": {
-            "beforeStatementContinuationChars": {
-              "enum": ["always", "any", "never"]
+          \\"additionalProperties\\": false,
+          \\"properties\\": {
+            \\"beforeStatementContinuationChars\\": {
+              \\"enum\\": [\\"always\\", \\"any\\", \\"never\\"]
             }
           },
-          "type": "object"
+          \\"type\\": \\"object\\"
         }
       ],
-      "maxItems": 2,
-      "minItems": 0,
-      "type": "array"
+      \\"maxItems\\": 2,
+      \\"minItems\\": 0,
+      \\"type\\": \\"array\\"
     },
     {
-      "items": [
+      \\"items\\": [
         {
-          "enum": ["always"]
+          \\"enum\\": [\\"always\\"]
         },
         {
-          "additionalProperties": false,
-          "properties": {
-            "omitLastInOneLineBlock": {
-              "type": "boolean"
+          \\"additionalProperties\\": false,
+          \\"properties\\": {
+            \\"omitLastInOneLineBlock\\": {
+              \\"type\\": \\"boolean\\"
             },
-            "omitLastInOneLineClassBody": {
-              "type": "boolean"
+            \\"omitLastInOneLineClassBody\\": {
+              \\"type\\": \\"boolean\\"
             }
           },
-          "type": "object"
+          \\"type\\": \\"object\\"
         }
       ],
-      "maxItems": 2,
-      "minItems": 0,
-      "type": "array"
+      \\"maxItems\\": 2,
+      \\"minItems\\": 0,
+      \\"type\\": \\"array\\"
     }
   ]
 }

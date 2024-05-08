@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rule schemas should be convertible to TS types for documentation purposes no-non-null-asserted-nullish-coalescing 1`] = `
+exports[`tests/schemas.test.ts > Rule schemas should be convertible to TS types for documentation purposes > no-non-null-asserted-nullish-coalescing 1`] = `
 "
 # SCHEMA:
 

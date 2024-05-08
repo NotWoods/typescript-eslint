@@ -7,8 +7,9 @@ export default mergeConfig(
   baseConfig,
   defineConfig({
     test: {
-      include: ['./tests/lib/*.test.ts'],
-      pool: 'forks', // use child_process, which supports process.chdir()
+      coverage: {
+        exclude: ['src/index.ts', 'src/configs/**/*.ts'],
+      },
     },
   }),
 );

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Validating rule docs space-before-blocks.mdx code examples ESLint output 1`] = `
+exports[`tests/docs.test.ts > Validating rule docs > space-before-blocks.mdx > code examples ESLint output 1`] = `
 "Incorrect
 
 enum Breakpoint{
@@ -18,7 +18,7 @@ interface State{
 "
 `;
 
-exports[`Validating rule docs space-before-blocks.mdx code examples ESLint output 2`] = `
+exports[`tests/docs.test.ts > Validating rule docs > space-before-blocks.mdx > code examples ESLint output 2`] = `
 "Correct
 
 enum Breakpoint {

@@ -1,39 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rule schemas should be convertible to TS types for documentation purposes typedef 1`] = `
+exports[`tests/schemas.test.ts > Rule schemas should be convertible to TS types for documentation purposes > typedef 1`] = `
 "
 # SCHEMA:
 
 [
   {
-    "additionalProperties": false,
-    "properties": {
-      "arrayDestructuring": {
-        "type": "boolean"
+    \\"additionalProperties\\": false,
+    \\"properties\\": {
+      \\"arrayDestructuring\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "arrowParameter": {
-        "type": "boolean"
+      \\"arrowParameter\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "memberVariableDeclaration": {
-        "type": "boolean"
+      \\"memberVariableDeclaration\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "objectDestructuring": {
-        "type": "boolean"
+      \\"objectDestructuring\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "parameter": {
-        "type": "boolean"
+      \\"parameter\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "propertyDeclaration": {
-        "type": "boolean"
+      \\"propertyDeclaration\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "variableDeclaration": {
-        "type": "boolean"
+      \\"variableDeclaration\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "variableDeclarationIgnoreFunction": {
-        "type": "boolean"
+      \\"variableDeclarationIgnoreFunction\\": {
+        \\"type\\": \\"boolean\\"
       }
     },
-    "type": "object"
+    \\"type\\": \\"object\\"
   }
 ]
 

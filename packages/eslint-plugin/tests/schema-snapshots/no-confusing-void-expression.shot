@@ -1,21 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rule schemas should be convertible to TS types for documentation purposes no-confusing-void-expression 1`] = `
+exports[`tests/schemas.test.ts > Rule schemas should be convertible to TS types for documentation purposes > no-confusing-void-expression 1`] = `
 "
 # SCHEMA:
 
 [
   {
-    "additionalProperties": false,
-    "properties": {
-      "ignoreArrowShorthand": {
-        "type": "boolean"
+    \\"additionalProperties\\": false,
+    \\"properties\\": {
+      \\"ignoreArrowShorthand\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "ignoreVoidOperator": {
-        "type": "boolean"
+      \\"ignoreVoidOperator\\": {
+        \\"type\\": \\"boolean\\"
       }
     },
-    "type": "object"
+    \\"type\\": \\"object\\"
   }
 ]
 

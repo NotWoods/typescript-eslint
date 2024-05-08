@@ -1,857 +1,857 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rule schemas should be convertible to TS types for documentation purposes keyword-spacing 1`] = `
+exports[`tests/schemas.test.ts > Rule schemas should be convertible to TS types for documentation purposes > keyword-spacing 1`] = `
 "
 # SCHEMA:
 
 [
   {
-    "additionalProperties": false,
-    "properties": {
-      "after": {
-        "default": true,
-        "type": "boolean"
+    \\"additionalProperties\\": false,
+    \\"properties\\": {
+      \\"after\\": {
+        \\"default\\": true,
+        \\"type\\": \\"boolean\\"
       },
-      "before": {
-        "default": true,
-        "type": "boolean"
+      \\"before\\": {
+        \\"default\\": true,
+        \\"type\\": \\"boolean\\"
       },
-      "overrides": {
-        "additionalProperties": false,
-        "properties": {
-          "abstract": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+      \\"overrides\\": {
+        \\"additionalProperties\\": false,
+        \\"properties\\": {
+          \\"abstract\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "as": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"as\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "async": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"async\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "await": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"await\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "boolean": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"boolean\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "break": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"break\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "byte": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"byte\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "case": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"case\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "catch": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"catch\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "char": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"char\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "class": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"class\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "const": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"const\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "continue": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"continue\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "debugger": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"debugger\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "default": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"default\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "delete": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"delete\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "do": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"do\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "double": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"double\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "else": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"else\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "enum": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"enum\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "export": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"export\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "extends": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"extends\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "false": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"false\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "final": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"final\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "finally": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"finally\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "float": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"float\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "for": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"for\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "from": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"from\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "function": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"function\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "get": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"get\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "goto": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"goto\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "if": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"if\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "implements": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"implements\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "import": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"import\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "in": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"in\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "instanceof": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"instanceof\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "int": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"int\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "interface": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"interface\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "let": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"let\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "long": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"long\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "native": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"native\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "new": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"new\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "null": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"null\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "of": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"of\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "package": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"package\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "private": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"private\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "protected": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"protected\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "public": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"public\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "return": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"return\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "set": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"set\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "short": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"short\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "static": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"static\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "super": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"super\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "switch": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"switch\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "synchronized": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"synchronized\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "this": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"this\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "throw": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"throw\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "throws": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"throws\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "transient": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"transient\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "true": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"true\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "try": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"try\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "type": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"type\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "typeof": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"typeof\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "var": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"var\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "void": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"void\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "volatile": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"volatile\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "while": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"while\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "with": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"with\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "yield": {
-            "additionalProperties": false,
-            "properties": {
-              "after": {
-                "type": "boolean"
+          \\"yield\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"after\\": {
+                \\"type\\": \\"boolean\\"
               },
-              "before": {
-                "type": "boolean"
+              \\"before\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           }
         },
-        "type": "object"
+        \\"type\\": \\"object\\"
       }
     },
-    "type": "object"
+    \\"type\\": \\"object\\"
   }
 ]
 

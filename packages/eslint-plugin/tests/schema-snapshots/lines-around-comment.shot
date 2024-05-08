@@ -1,87 +1,87 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rule schemas should be convertible to TS types for documentation purposes lines-around-comment 1`] = `
+exports[`tests/schemas.test.ts > Rule schemas should be convertible to TS types for documentation purposes > lines-around-comment 1`] = `
 "
 # SCHEMA:
 
 [
   {
-    "additionalProperties": false,
-    "properties": {
-      "afterBlockComment": {
-        "default": false,
-        "type": "boolean"
+    \\"additionalProperties\\": false,
+    \\"properties\\": {
+      \\"afterBlockComment\\": {
+        \\"default\\": false,
+        \\"type\\": \\"boolean\\"
       },
-      "afterLineComment": {
-        "default": false,
-        "type": "boolean"
+      \\"afterLineComment\\": {
+        \\"default\\": false,
+        \\"type\\": \\"boolean\\"
       },
-      "allowArrayEnd": {
-        "type": "boolean"
+      \\"allowArrayEnd\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowArrayStart": {
-        "type": "boolean"
+      \\"allowArrayStart\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowBlockEnd": {
-        "default": false,
-        "type": "boolean"
+      \\"allowBlockEnd\\": {
+        \\"default\\": false,
+        \\"type\\": \\"boolean\\"
       },
-      "allowBlockStart": {
-        "default": false,
-        "type": "boolean"
+      \\"allowBlockStart\\": {
+        \\"default\\": false,
+        \\"type\\": \\"boolean\\"
       },
-      "allowClassEnd": {
-        "type": "boolean"
+      \\"allowClassEnd\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowClassStart": {
-        "type": "boolean"
+      \\"allowClassStart\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowEnumEnd": {
-        "type": "boolean"
+      \\"allowEnumEnd\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowEnumStart": {
-        "type": "boolean"
+      \\"allowEnumStart\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowInterfaceEnd": {
-        "type": "boolean"
+      \\"allowInterfaceEnd\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowInterfaceStart": {
-        "type": "boolean"
+      \\"allowInterfaceStart\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowModuleEnd": {
-        "type": "boolean"
+      \\"allowModuleEnd\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowModuleStart": {
-        "type": "boolean"
+      \\"allowModuleStart\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowObjectEnd": {
-        "type": "boolean"
+      \\"allowObjectEnd\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowObjectStart": {
-        "type": "boolean"
+      \\"allowObjectStart\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowTypeEnd": {
-        "type": "boolean"
+      \\"allowTypeEnd\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowTypeStart": {
-        "type": "boolean"
+      \\"allowTypeStart\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "applyDefaultIgnorePatterns": {
-        "type": "boolean"
+      \\"applyDefaultIgnorePatterns\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "beforeBlockComment": {
-        "default": true,
-        "type": "boolean"
+      \\"beforeBlockComment\\": {
+        \\"default\\": true,
+        \\"type\\": \\"boolean\\"
       },
-      "beforeLineComment": {
-        "default": false,
-        "type": "boolean"
+      \\"beforeLineComment\\": {
+        \\"default\\": false,
+        \\"type\\": \\"boolean\\"
       },
-      "ignorePattern": {
-        "type": "string"
+      \\"ignorePattern\\": {
+        \\"type\\": \\"string\\"
       }
     },
-    "type": "object"
+    \\"type\\": \\"object\\"
   }
 ]
 

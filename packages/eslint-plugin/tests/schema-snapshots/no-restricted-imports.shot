@@ -1,144 +1,144 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rule schemas should be convertible to TS types for documentation purposes no-restricted-imports 1`] = `
+exports[`tests/schemas.test.ts > Rule schemas should be convertible to TS types for documentation purposes > no-restricted-imports 1`] = `
 "
 # SCHEMA:
 
 {
-  "anyOf": [
+  \\"anyOf\\": [
     {
-      "items": {
-        "anyOf": [
+      \\"items\\": {
+        \\"anyOf\\": [
           {
-            "type": "string"
+            \\"type\\": \\"string\\"
           },
           {
-            "additionalProperties": false,
-            "properties": {
-              "allowTypeImports": {
-                "description": "Disallow value imports, but allow type-only imports.",
-                "type": "boolean"
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"allowTypeImports\\": {
+                \\"description\\": \\"Disallow value imports, but allow type-only imports.\\",
+                \\"type\\": \\"boolean\\"
               },
-              "importNames": {
-                "items": {
-                  "type": "string"
+              \\"importNames\\": {
+                \\"items\\": {
+                  \\"type\\": \\"string\\"
                 },
-                "type": "array"
+                \\"type\\": \\"array\\"
               },
-              "message": {
-                "minLength": 1,
-                "type": "string"
+              \\"message\\": {
+                \\"minLength\\": 1,
+                \\"type\\": \\"string\\"
               },
-              "name": {
-                "type": "string"
+              \\"name\\": {
+                \\"type\\": \\"string\\"
               }
             },
-            "required": ["name"],
-            "type": "object"
+            \\"required\\": [\\"name\\"],
+            \\"type\\": \\"object\\"
           }
         ]
       },
-      "type": "array",
-      "uniqueItems": true
+      \\"type\\": \\"array\\",
+      \\"uniqueItems\\": true
     },
     {
-      "additionalItems": false,
-      "items": [
+      \\"additionalItems\\": false,
+      \\"items\\": [
         {
-          "additionalProperties": false,
-          "properties": {
-            "paths": {
-              "items": {
-                "anyOf": [
+          \\"additionalProperties\\": false,
+          \\"properties\\": {
+            \\"paths\\": {
+              \\"items\\": {
+                \\"anyOf\\": [
                   {
-                    "type": "string"
+                    \\"type\\": \\"string\\"
                   },
                   {
-                    "additionalProperties": false,
-                    "properties": {
-                      "allowTypeImports": {
-                        "description": "Disallow value imports, but allow type-only imports.",
-                        "type": "boolean"
+                    \\"additionalProperties\\": false,
+                    \\"properties\\": {
+                      \\"allowTypeImports\\": {
+                        \\"description\\": \\"Disallow value imports, but allow type-only imports.\\",
+                        \\"type\\": \\"boolean\\"
                       },
-                      "importNames": {
-                        "items": {
-                          "type": "string"
+                      \\"importNames\\": {
+                        \\"items\\": {
+                          \\"type\\": \\"string\\"
                         },
-                        "type": "array"
+                        \\"type\\": \\"array\\"
                       },
-                      "message": {
-                        "minLength": 1,
-                        "type": "string"
+                      \\"message\\": {
+                        \\"minLength\\": 1,
+                        \\"type\\": \\"string\\"
                       },
-                      "name": {
-                        "type": "string"
+                      \\"name\\": {
+                        \\"type\\": \\"string\\"
                       }
                     },
-                    "required": ["name"],
-                    "type": "object"
+                    \\"required\\": [\\"name\\"],
+                    \\"type\\": \\"object\\"
                   }
                 ]
               },
-              "type": "array",
-              "uniqueItems": true
+              \\"type\\": \\"array\\",
+              \\"uniqueItems\\": true
             },
-            "patterns": {
-              "anyOf": [
+            \\"patterns\\": {
+              \\"anyOf\\": [
                 {
-                  "items": {
-                    "type": "string"
+                  \\"items\\": {
+                    \\"type\\": \\"string\\"
                   },
-                  "type": "array",
-                  "uniqueItems": true
+                  \\"type\\": \\"array\\",
+                  \\"uniqueItems\\": true
                 },
                 {
-                  "items": {
-                    "additionalProperties": false,
-                    "properties": {
-                      "allowTypeImports": {
-                        "description": "Disallow value imports, but allow type-only imports.",
-                        "type": "boolean"
+                  \\"items\\": {
+                    \\"additionalProperties\\": false,
+                    \\"properties\\": {
+                      \\"allowTypeImports\\": {
+                        \\"description\\": \\"Disallow value imports, but allow type-only imports.\\",
+                        \\"type\\": \\"boolean\\"
                       },
-                      "caseSensitive": {
-                        "type": "boolean"
+                      \\"caseSensitive\\": {
+                        \\"type\\": \\"boolean\\"
                       },
-                      "group": {
-                        "items": {
-                          "type": "string"
+                      \\"group\\": {
+                        \\"items\\": {
+                          \\"type\\": \\"string\\"
                         },
-                        "minItems": 1,
-                        "type": "array",
-                        "uniqueItems": true
+                        \\"minItems\\": 1,
+                        \\"type\\": \\"array\\",
+                        \\"uniqueItems\\": true
                       },
-                      "importNamePattern": {
-                        "type": "string"
+                      \\"importNamePattern\\": {
+                        \\"type\\": \\"string\\"
                       },
-                      "importNames": {
-                        "items": {
-                          "type": "string"
+                      \\"importNames\\": {
+                        \\"items\\": {
+                          \\"type\\": \\"string\\"
                         },
-                        "minItems": 1,
-                        "type": "array",
-                        "uniqueItems": true
+                        \\"minItems\\": 1,
+                        \\"type\\": \\"array\\",
+                        \\"uniqueItems\\": true
                       },
-                      "message": {
-                        "minLength": 1,
-                        "type": "string"
+                      \\"message\\": {
+                        \\"minLength\\": 1,
+                        \\"type\\": \\"string\\"
                       }
                     },
-                    "required": ["group"],
-                    "type": "object"
+                    \\"required\\": [\\"group\\"],
+                    \\"type\\": \\"object\\"
                   },
-                  "type": "array",
-                  "uniqueItems": true
+                  \\"type\\": \\"array\\",
+                  \\"uniqueItems\\": true
                 }
               ]
             }
           },
-          "type": "object"
+          \\"type\\": \\"object\\"
         }
       ],
-      "type": "array"
+      \\"type\\": \\"array\\"
     }
   ]
 }

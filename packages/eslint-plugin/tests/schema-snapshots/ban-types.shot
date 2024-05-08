@@ -1,71 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rule schemas should be convertible to TS types for documentation purposes ban-types 1`] = `
+exports[`tests/schemas.test.ts > Rule schemas should be convertible to TS types for documentation purposes > ban-types 1`] = `
 "
 # SCHEMA:
 
 [
   {
-    "$defs": {
-      "banConfig": {
-        "oneOf": [
+    \\"$defs\\": {
+      \\"banConfig\\": {
+        \\"oneOf\\": [
           {
-            "description": "Bans the type with the default message",
-            "type": "null"
+            \\"description\\": \\"Bans the type with the default message\\",
+            \\"type\\": \\"null\\"
           },
           {
-            "description": "Un-bans the type (useful when paired with \`extendDefaults\`)",
-            "enum": [false],
-            "type": "boolean"
+            \\"description\\": \\"Un-bans the type (useful when paired with \`extendDefaults\`)\\",
+            \\"enum\\": [false],
+            \\"type\\": \\"boolean\\"
           },
           {
-            "description": "Bans the type with the default message",
-            "enum": [true],
-            "type": "boolean"
+            \\"description\\": \\"Bans the type with the default message\\",
+            \\"enum\\": [true],
+            \\"type\\": \\"boolean\\"
           },
           {
-            "description": "Bans the type with a custom message",
-            "type": "string"
+            \\"description\\": \\"Bans the type with a custom message\\",
+            \\"type\\": \\"string\\"
           },
           {
-            "additionalProperties": false,
-            "description": "Bans a type",
-            "properties": {
-              "fixWith": {
-                "description": "Type to autofix replace with. Note that autofixers can be applied automatically - so you need to be careful with this option.",
-                "type": "string"
+            \\"additionalProperties\\": false,
+            \\"description\\": \\"Bans a type\\",
+            \\"properties\\": {
+              \\"fixWith\\": {
+                \\"description\\": \\"Type to autofix replace with. Note that autofixers can be applied automatically - so you need to be careful with this option.\\",
+                \\"type\\": \\"string\\"
               },
-              "message": {
-                "description": "Custom error message",
-                "type": "string"
+              \\"message\\": {
+                \\"description\\": \\"Custom error message\\",
+                \\"type\\": \\"string\\"
               },
-              "suggest": {
-                "additionalItems": false,
-                "description": "Types to suggest replacing with.",
-                "items": {
-                  "type": "string"
+              \\"suggest\\": {
+                \\"additionalItems\\": false,
+                \\"description\\": \\"Types to suggest replacing with.\\",
+                \\"items\\": {
+                  \\"type\\": \\"string\\"
                 },
-                "type": "array"
+                \\"type\\": \\"array\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           }
         ]
       }
     },
-    "additionalProperties": false,
-    "properties": {
-      "extendDefaults": {
-        "type": "boolean"
+    \\"additionalProperties\\": false,
+    \\"properties\\": {
+      \\"extendDefaults\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "types": {
-        "additionalProperties": {
-          "$ref": "#/items/0/$defs/banConfig"
+      \\"types\\": {
+        \\"additionalProperties\\": {
+          \\"$ref\\": \\"#/items/0/$defs/banConfig\\"
         },
-        "type": "object"
+        \\"type\\": \\"object\\"
       }
     },
-    "type": "object"
+    \\"type\\": \\"object\\"
   }
 ]
 

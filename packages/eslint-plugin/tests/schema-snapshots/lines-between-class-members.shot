@@ -1,57 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rule schemas should be convertible to TS types for documentation purposes lines-between-class-members 1`] = `
+exports[`tests/schemas.test.ts > Rule schemas should be convertible to TS types for documentation purposes > lines-between-class-members 1`] = `
 "
 # SCHEMA:
 
 [
   {
-    "anyOf": [
+    \\"anyOf\\": [
       {
-        "additionalProperties": false,
-        "properties": {
-          "enforce": {
-            "items": {
-              "additionalProperties": false,
-              "properties": {
-                "blankLine": {
-                  "enum": ["always", "never"]
+        \\"additionalProperties\\": false,
+        \\"properties\\": {
+          \\"enforce\\": {
+            \\"items\\": {
+              \\"additionalProperties\\": false,
+              \\"properties\\": {
+                \\"blankLine\\": {
+                  \\"enum\\": [\\"always\\", \\"never\\"]
                 },
-                "next": {
-                  "enum": ["*", "field", "method"]
+                \\"next\\": {
+                  \\"enum\\": [\\"*\\", \\"field\\", \\"method\\"]
                 },
-                "prev": {
-                  "enum": ["*", "field", "method"]
+                \\"prev\\": {
+                  \\"enum\\": [\\"*\\", \\"field\\", \\"method\\"]
                 }
               },
-              "required": ["blankLine", "prev", "next"],
-              "type": "object"
+              \\"required\\": [\\"blankLine\\", \\"prev\\", \\"next\\"],
+              \\"type\\": \\"object\\"
             },
-            "minItems": 1,
-            "type": "array"
+            \\"minItems\\": 1,
+            \\"type\\": \\"array\\"
           }
         },
-        "required": ["enforce"],
-        "type": "object"
+        \\"required\\": [\\"enforce\\"],
+        \\"type\\": \\"object\\"
       },
       {
-        "enum": ["always", "never"]
+        \\"enum\\": [\\"always\\", \\"never\\"]
       }
     ]
   },
   {
-    "additionalProperties": false,
-    "properties": {
-      "exceptAfterOverload": {
-        "default": true,
-        "type": "boolean"
+    \\"additionalProperties\\": false,
+    \\"properties\\": {
+      \\"exceptAfterOverload\\": {
+        \\"default\\": true,
+        \\"type\\": \\"boolean\\"
       },
-      "exceptAfterSingleLine": {
-        "default": false,
-        "type": "boolean"
+      \\"exceptAfterSingleLine\\": {
+        \\"default\\": false,
+        \\"type\\": \\"boolean\\"
       }
     },
-    "type": "object"
+    \\"type\\": \\"object\\"
   }
 ]
 

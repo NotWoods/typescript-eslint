@@ -1,42 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rule schemas should be convertible to TS types for documentation purposes strict-boolean-expressions 1`] = `
+exports[`tests/schemas.test.ts > Rule schemas should be convertible to TS types for documentation purposes > strict-boolean-expressions 1`] = `
 "
 # SCHEMA:
 
 [
   {
-    "additionalProperties": false,
-    "properties": {
-      "allowAny": {
-        "type": "boolean"
+    \\"additionalProperties\\": false,
+    \\"properties\\": {
+      \\"allowAny\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowNullableBoolean": {
-        "type": "boolean"
+      \\"allowNullableBoolean\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowNullableEnum": {
-        "type": "boolean"
+      \\"allowNullableEnum\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowNullableNumber": {
-        "type": "boolean"
+      \\"allowNullableNumber\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowNullableObject": {
-        "type": "boolean"
+      \\"allowNullableObject\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowNullableString": {
-        "type": "boolean"
+      \\"allowNullableString\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowNumber": {
-        "type": "boolean"
+      \\"allowNumber\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing": {
-        "type": "boolean"
+      \\"allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowString": {
-        "type": "boolean"
+      \\"allowString\\": {
+        \\"type\\": \\"boolean\\"
       }
     },
-    "type": "object"
+    \\"type\\": \\"object\\"
   }
 ]
 

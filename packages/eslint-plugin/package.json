@@ -48,16 +48,16 @@
   ],
   "scripts": {
     "build": "tsc -b tsconfig.build.json",
-    "check-docs": "jest tests/docs.test.ts --runTestsByPath --silent --runInBand",
-    "check-configs": "jest tests/configs.test.ts --runTestsByPath --silent --runInBand",
+    "check-docs": "vitest run tests/docs.test.ts --silent",
+    "check-configs": "vitest run tests/configs.test.ts --silent",
     "clean": "tsc -b tsconfig.build.json --clean",
     "postclean": "rimraf dist && rimraf coverage",
     "format": "prettier --write \"./**/*.{ts,mts,cts,tsx,js,mjs,cjs,jsx,json,md,css}\" --ignore-path ../../.prettierignore",
     "generate:breaking-changes": "yarn tsx tools/generate-breaking-changes.mts",
     "generate:configs": "npx nx run repo-tools:generate-configs",
     "lint": "npx nx lint",
-    "test": "cross-env NODE_OPTIONS=\"--experimental-vm-modules\" jest --coverage --logHeapUsage",
-    "test-single": "cross-env NODE_OPTIONS=\"--experimental-vm-modules\" jest --no-coverage",
+    "test": "vitest --coverage --logHeapUsage",
+    "test-single": "vitest --coverage=false",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
@@ -86,7 +86,6 @@
     "cross-fetch": "*",
     "eslint": "*",
     "grapheme-splitter": "^1.0.4",
-    "jest": "29.7.0",
     "jest-specific-snapshot": "^8.0.0",
     "json-schema": "*",
     "markdown-table": "^3.0.3",
@@ -99,7 +98,8 @@
     "title-case": "^3.0.3",
     "tsx": "*",
     "typescript": "*",
-    "unist-util-visit": "^5.0.0"
+    "unist-util-visit": "^5.0.0",
+    "vitest": "1.6.0"
   },
   "peerDependencies": {
     "@typescript-eslint/parser": "^7.0.0",

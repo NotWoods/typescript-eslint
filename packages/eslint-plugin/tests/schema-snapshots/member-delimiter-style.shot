@@ -1,95 +1,95 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rule schemas should be convertible to TS types for documentation purposes member-delimiter-style 1`] = `
+exports[`tests/schemas.test.ts > Rule schemas should be convertible to TS types for documentation purposes > member-delimiter-style 1`] = `
 "
 # SCHEMA:
 
 [
   {
-    "$defs": {
-      "delimiterConfig": {
-        "additionalProperties": false,
-        "properties": {
-          "multiline": {
-            "additionalProperties": false,
-            "properties": {
-              "delimiter": {
-                "$ref": "#/items/0/$defs/multiLineOption"
+    \\"$defs\\": {
+      \\"delimiterConfig\\": {
+        \\"additionalProperties\\": false,
+        \\"properties\\": {
+          \\"multiline\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"delimiter\\": {
+                \\"$ref\\": \\"#/items/0/$defs/multiLineOption\\"
               },
-              "requireLast": {
-                "type": "boolean"
+              \\"requireLast\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           },
-          "singleline": {
-            "additionalProperties": false,
-            "properties": {
-              "delimiter": {
-                "$ref": "#/items/0/$defs/singleLineOption"
+          \\"singleline\\": {
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"delimiter\\": {
+                \\"$ref\\": \\"#/items/0/$defs/singleLineOption\\"
               },
-              "requireLast": {
-                "type": "boolean"
+              \\"requireLast\\": {
+                \\"type\\": \\"boolean\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           }
         },
-        "type": "object"
+        \\"type\\": \\"object\\"
       },
-      "multiLineOption": {
-        "enum": ["comma", "none", "semi"],
-        "type": "string"
+      \\"multiLineOption\\": {
+        \\"enum\\": [\\"comma\\", \\"none\\", \\"semi\\"],
+        \\"type\\": \\"string\\"
       },
-      "singleLineOption": {
-        "enum": ["comma", "semi"],
-        "type": "string"
+      \\"singleLineOption\\": {
+        \\"enum\\": [\\"comma\\", \\"semi\\"],
+        \\"type\\": \\"string\\"
       }
     },
-    "additionalProperties": false,
-    "properties": {
-      "multiline": {
-        "additionalProperties": false,
-        "properties": {
-          "delimiter": {
-            "$ref": "#/items/0/$defs/multiLineOption"
+    \\"additionalProperties\\": false,
+    \\"properties\\": {
+      \\"multiline\\": {
+        \\"additionalProperties\\": false,
+        \\"properties\\": {
+          \\"delimiter\\": {
+            \\"$ref\\": \\"#/items/0/$defs/multiLineOption\\"
           },
-          "requireLast": {
-            "type": "boolean"
+          \\"requireLast\\": {
+            \\"type\\": \\"boolean\\"
           }
         },
-        "type": "object"
+        \\"type\\": \\"object\\"
       },
-      "multilineDetection": {
-        "enum": ["brackets", "last-member"],
-        "type": "string"
+      \\"multilineDetection\\": {
+        \\"enum\\": [\\"brackets\\", \\"last-member\\"],
+        \\"type\\": \\"string\\"
       },
-      "overrides": {
-        "additionalProperties": false,
-        "properties": {
-          "interface": {
-            "$ref": "#/items/0/$defs/delimiterConfig"
+      \\"overrides\\": {
+        \\"additionalProperties\\": false,
+        \\"properties\\": {
+          \\"interface\\": {
+            \\"$ref\\": \\"#/items/0/$defs/delimiterConfig\\"
           },
-          "typeLiteral": {
-            "$ref": "#/items/0/$defs/delimiterConfig"
+          \\"typeLiteral\\": {
+            \\"$ref\\": \\"#/items/0/$defs/delimiterConfig\\"
           }
         },
-        "type": "object"
+        \\"type\\": \\"object\\"
       },
-      "singleline": {
-        "additionalProperties": false,
-        "properties": {
-          "delimiter": {
-            "$ref": "#/items/0/$defs/singleLineOption"
+      \\"singleline\\": {
+        \\"additionalProperties\\": false,
+        \\"properties\\": {
+          \\"delimiter\\": {
+            \\"$ref\\": \\"#/items/0/$defs/singleLineOption\\"
           },
-          "requireLast": {
-            "type": "boolean"
+          \\"requireLast\\": {
+            \\"type\\": \\"boolean\\"
           }
         },
-        "type": "object"
+        \\"type\\": \\"object\\"
       }
     },
-    "type": "object"
+    \\"type\\": \\"object\\"
   }
 ]
 

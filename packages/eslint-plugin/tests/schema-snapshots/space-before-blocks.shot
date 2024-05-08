@@ -1,29 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rule schemas should be convertible to TS types for documentation purposes space-before-blocks 1`] = `
+exports[`tests/schemas.test.ts > Rule schemas should be convertible to TS types for documentation purposes > space-before-blocks 1`] = `
 "
 # SCHEMA:
 
 [
   {
-    "oneOf": [
+    \\"oneOf\\": [
       {
-        "enum": ["always", "never"]
+        \\"enum\\": [\\"always\\", \\"never\\"]
       },
       {
-        "additionalProperties": false,
-        "properties": {
-          "classes": {
-            "enum": ["always", "never", "off"]
+        \\"additionalProperties\\": false,
+        \\"properties\\": {
+          \\"classes\\": {
+            \\"enum\\": [\\"always\\", \\"never\\", \\"off\\"]
           },
-          "functions": {
-            "enum": ["always", "never", "off"]
+          \\"functions\\": {
+            \\"enum\\": [\\"always\\", \\"never\\", \\"off\\"]
           },
-          "keywords": {
-            "enum": ["always", "never", "off"]
+          \\"keywords\\": {
+            \\"enum\\": [\\"always\\", \\"never\\", \\"off\\"]
           }
         },
-        "type": "object"
+        \\"type\\": \\"object\\"
       }
     ]
   }

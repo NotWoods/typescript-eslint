@@ -1,32 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rule schemas should be convertible to TS types for documentation purposes no-invalid-void-type 1`] = `
+exports[`tests/schemas.test.ts > Rule schemas should be convertible to TS types for documentation purposes > no-invalid-void-type 1`] = `
 "
 # SCHEMA:
 
 [
   {
-    "additionalProperties": false,
-    "properties": {
-      "allowAsThisParameter": {
-        "type": "boolean"
+    \\"additionalProperties\\": false,
+    \\"properties\\": {
+      \\"allowAsThisParameter\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "allowInGenericTypeArguments": {
-        "oneOf": [
+      \\"allowInGenericTypeArguments\\": {
+        \\"oneOf\\": [
           {
-            "type": "boolean"
+            \\"type\\": \\"boolean\\"
           },
           {
-            "items": {
-              "type": "string"
+            \\"items\\": {
+              \\"type\\": \\"string\\"
             },
-            "minItems": 1,
-            "type": "array"
+            \\"minItems\\": 1,
+            \\"type\\": \\"array\\"
           }
         ]
       }
     },
-    "type": "object"
+    \\"type\\": \\"object\\"
   }
 ]
 

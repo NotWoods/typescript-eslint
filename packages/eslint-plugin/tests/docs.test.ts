@@ -115,14 +115,10 @@ describe('Validating rule docs', () => {
   let mdxFromMarkdown: typeof MdxFromMarkdown;
   let unistUtilVisit: typeof UnistUtilVisit;
   beforeAll(async () => {
-    // dynamic import('...') is transpiled to the require('...') call,
-    // but all modules imported below are ESM only, so we cannot require() them
-    // eslint-disable-next-line @typescript-eslint/no-implied-eval
-    const dynamicImport = new Function('module', 'return import(module)');
-    ({ fromMarkdown } = await dynamicImport('mdast-util-from-markdown'));
-    ({ mdxjs } = await dynamicImport('micromark-extension-mdxjs'));
-    ({ mdxFromMarkdown } = await dynamicImport('mdast-util-mdx'));
-    unistUtilVisit = await dynamicImport('unist-util-visit');
+    ({ fromMarkdown } = await import('mdast-util-from-markdown'));
+    ({ mdxjs } = await import('micromark-extension-mdxjs'));
+    ({ mdxFromMarkdown } = await import('mdast-util-mdx'));
+    unistUtilVisit = await import('unist-util-visit');
   });
 
   const ignoredFiles = new Set([

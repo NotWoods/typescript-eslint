@@ -1,54 +1,54 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rule schemas should be convertible to TS types for documentation purposes ban-ts-comment 1`] = `
+exports[`tests/schemas.test.ts > Rule schemas should be convertible to TS types for documentation purposes > ban-ts-comment 1`] = `
 "
 # SCHEMA:
 
 [
   {
-    "$defs": {
-      "directiveConfigSchema": {
-        "oneOf": [
+    \\"$defs\\": {
+      \\"directiveConfigSchema\\": {
+        \\"oneOf\\": [
           {
-            "default": true,
-            "type": "boolean"
+            \\"default\\": true,
+            \\"type\\": \\"boolean\\"
           },
           {
-            "enum": ["allow-with-description"],
-            "type": "string"
+            \\"enum\\": [\\"allow-with-description\\"],
+            \\"type\\": \\"string\\"
           },
           {
-            "additionalProperties": false,
-            "properties": {
-              "descriptionFormat": {
-                "type": "string"
+            \\"additionalProperties\\": false,
+            \\"properties\\": {
+              \\"descriptionFormat\\": {
+                \\"type\\": \\"string\\"
               }
             },
-            "type": "object"
+            \\"type\\": \\"object\\"
           }
         ]
       }
     },
-    "additionalProperties": false,
-    "properties": {
-      "minimumDescriptionLength": {
-        "default": 3,
-        "type": "number"
+    \\"additionalProperties\\": false,
+    \\"properties\\": {
+      \\"minimumDescriptionLength\\": {
+        \\"default\\": 3,
+        \\"type\\": \\"number\\"
       },
-      "ts-check": {
-        "$ref": "#/items/0/$defs/directiveConfigSchema"
+      \\"ts-check\\": {
+        \\"$ref\\": \\"#/items/0/$defs/directiveConfigSchema\\"
       },
-      "ts-expect-error": {
-        "$ref": "#/items/0/$defs/directiveConfigSchema"
+      \\"ts-expect-error\\": {
+        \\"$ref\\": \\"#/items/0/$defs/directiveConfigSchema\\"
       },
-      "ts-ignore": {
-        "$ref": "#/items/0/$defs/directiveConfigSchema"
+      \\"ts-ignore\\": {
+        \\"$ref\\": \\"#/items/0/$defs/directiveConfigSchema\\"
       },
-      "ts-nocheck": {
-        "$ref": "#/items/0/$defs/directiveConfigSchema"
+      \\"ts-nocheck\\": {
+        \\"$ref\\": \\"#/items/0/$defs/directiveConfigSchema\\"
       }
     },
-    "type": "object"
+    \\"type\\": \\"object\\"
   }
 ]
 

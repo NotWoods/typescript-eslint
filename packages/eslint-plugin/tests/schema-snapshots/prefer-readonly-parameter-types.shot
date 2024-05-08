@@ -1,118 +1,118 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rule schemas should be convertible to TS types for documentation purposes prefer-readonly-parameter-types 1`] = `
+exports[`tests/schemas.test.ts > Rule schemas should be convertible to TS types for documentation purposes > prefer-readonly-parameter-types 1`] = `
 "
 # SCHEMA:
 
 [
   {
-    "additionalProperties": false,
-    "properties": {
-      "allow": {
-        "items": {
-          "oneOf": [
+    \\"additionalProperties\\": false,
+    \\"properties\\": {
+      \\"allow\\": {
+        \\"items\\": {
+          \\"oneOf\\": [
             {
-              "type": "string"
+              \\"type\\": \\"string\\"
             },
             {
-              "additionalProperties": false,
-              "properties": {
-                "from": {
-                  "enum": ["file"],
-                  "type": "string"
+              \\"additionalProperties\\": false,
+              \\"properties\\": {
+                \\"from\\": {
+                  \\"enum\\": [\\"file\\"],
+                  \\"type\\": \\"string\\"
                 },
-                "name": {
-                  "oneOf": [
+                \\"name\\": {
+                  \\"oneOf\\": [
                     {
-                      "type": "string"
+                      \\"type\\": \\"string\\"
                     },
                     {
-                      "items": {
-                        "type": "string"
+                      \\"items\\": {
+                        \\"type\\": \\"string\\"
                       },
-                      "minItems": 1,
-                      "type": "array",
-                      "uniqueItems": true
+                      \\"minItems\\": 1,
+                      \\"type\\": \\"array\\",
+                      \\"uniqueItems\\": true
                     }
                   ]
                 },
-                "path": {
-                  "type": "string"
+                \\"path\\": {
+                  \\"type\\": \\"string\\"
                 }
               },
-              "required": ["from", "name"],
-              "type": "object"
+              \\"required\\": [\\"from\\", \\"name\\"],
+              \\"type\\": \\"object\\"
             },
             {
-              "additionalProperties": false,
-              "properties": {
-                "from": {
-                  "enum": ["lib"],
-                  "type": "string"
+              \\"additionalProperties\\": false,
+              \\"properties\\": {
+                \\"from\\": {
+                  \\"enum\\": [\\"lib\\"],
+                  \\"type\\": \\"string\\"
                 },
-                "name": {
-                  "oneOf": [
+                \\"name\\": {
+                  \\"oneOf\\": [
                     {
-                      "type": "string"
+                      \\"type\\": \\"string\\"
                     },
                     {
-                      "items": {
-                        "type": "string"
+                      \\"items\\": {
+                        \\"type\\": \\"string\\"
                       },
-                      "minItems": 1,
-                      "type": "array",
-                      "uniqueItems": true
+                      \\"minItems\\": 1,
+                      \\"type\\": \\"array\\",
+                      \\"uniqueItems\\": true
                     }
                   ]
                 }
               },
-              "required": ["from", "name"],
-              "type": "object"
+              \\"required\\": [\\"from\\", \\"name\\"],
+              \\"type\\": \\"object\\"
             },
             {
-              "additionalProperties": false,
-              "properties": {
-                "from": {
-                  "enum": ["package"],
-                  "type": "string"
+              \\"additionalProperties\\": false,
+              \\"properties\\": {
+                \\"from\\": {
+                  \\"enum\\": [\\"package\\"],
+                  \\"type\\": \\"string\\"
                 },
-                "name": {
-                  "oneOf": [
+                \\"name\\": {
+                  \\"oneOf\\": [
                     {
-                      "type": "string"
+                      \\"type\\": \\"string\\"
                     },
                     {
-                      "items": {
-                        "type": "string"
+                      \\"items\\": {
+                        \\"type\\": \\"string\\"
                       },
-                      "minItems": 1,
-                      "type": "array",
-                      "uniqueItems": true
+                      \\"minItems\\": 1,
+                      \\"type\\": \\"array\\",
+                      \\"uniqueItems\\": true
                     }
                   ]
                 },
-                "package": {
-                  "type": "string"
+                \\"package\\": {
+                  \\"type\\": \\"string\\"
                 }
               },
-              "required": ["from", "name", "package"],
-              "type": "object"
+              \\"required\\": [\\"from\\", \\"name\\", \\"package\\"],
+              \\"type\\": \\"object\\"
             }
           ]
         },
-        "type": "array"
+        \\"type\\": \\"array\\"
       },
-      "checkParameterProperties": {
-        "type": "boolean"
+      \\"checkParameterProperties\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "ignoreInferredTypes": {
-        "type": "boolean"
+      \\"ignoreInferredTypes\\": {
+        \\"type\\": \\"boolean\\"
       },
-      "treatMethodsAsReadonly": {
-        "type": "boolean"
+      \\"treatMethodsAsReadonly\\": {
+        \\"type\\": \\"boolean\\"
       }
     },
-    "type": "object"
+    \\"type\\": \\"object\\"
   }
 ]
 

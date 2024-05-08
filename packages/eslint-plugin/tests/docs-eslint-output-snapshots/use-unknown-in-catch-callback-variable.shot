@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Validating rule docs use-unknown-in-catch-callback-variable.mdx code examples ESLint output 1`] = `
+exports[`tests/docs.test.ts > Validating rule docs > use-unknown-in-catch-callback-variable.mdx > code examples ESLint output 1`] = `
 "Incorrect
 
 Promise.reject(new Error('I will reject!')).catch(err => {
@@ -20,7 +20,7 @@ Promise.reject(new Error('I will reject!')).catch((err: Error) => {
 "
 `;
 
-exports[`Validating rule docs use-unknown-in-catch-callback-variable.mdx code examples ESLint output 2`] = `
+exports[`tests/docs.test.ts > Validating rule docs > use-unknown-in-catch-callback-variable.mdx > code examples ESLint output 2`] = `
 "Correct
 
 Promise.reject(new Error('I will reject!')).catch((err: unknown) => {
