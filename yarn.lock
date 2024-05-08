@@ -5612,10 +5612,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@typescript-eslint/integration-tests@workspace:packages/integration-tests"
   dependencies:
-    jest: 29.7.0
     ncp: "*"
     tmp: "*"
     tsx: "*"
+    vitest: 1.6.0
   languageName: unknown
   linkType: soft
 

@@ -6,6 +6,7 @@ import { promisify } from 'node:util';
 import ncp from 'ncp';
 import type { DirOptions } from 'tmp';
 import tmp from 'tmp';
+import { inject } from 'vitest';
 
 interface PackageJSON {
   name: string;
@@ -25,7 +26,7 @@ const tmpFile = promisify(tmp.file);
 const writeFile = promisify(fs.writeFile);
 
 const BASE_DEPENDENCIES: PackageJSON['devDependencies'] = {
-  ...global.tseslintPackages,
+  ...inject('tseslintPackages'),
   eslint: rootPackageJson.devDependencies.eslint,
   typescript: rootPackageJson.devDependencies.typescript,
   jest: rootPackageJson.devDependencies.jest,
@@ -35,9 +36,6 @@ const FIXTURES_DIR = path.join(__dirname, '..', 'fixtures');
 // an env var to persist the temp folder so that it can be inspected for debugging purposes
 const KEEP_INTEGRATION_TEST_DIR =
   process.env.KEEP_INTEGRATION_TEST_DIR === 'true';
-
-// make sure that jest doesn't timeout the test
-jest.setTimeout(60000);
 
 function integrationTest(
   testName: string,
@@ -75,7 +73,7 @@ function integrationTest(
             },
             // ensure everything uses the locally packed versions instead of the NPM versions
             resolutions: {
-              ...global.tseslintPackages,
+              ...inject('tseslintPackages'),
             },
           }),
         );
@@ -97,6 +95,7 @@ function integrationTest(
             ['install', '--no-immutable'],
             {
               cwd: testFolder,
+              shell: process.platform === 'win32',
             },
             (err, stdout, stderr) => {
               if (err) {

@@ -2,8 +2,9 @@
   "extends": "./tsconfig.build.json",
   "compilerOptions": {
     "composite": false,
-    "rootDir": "."
+    "rootDir": ".",
+    "types": ["node", "vitest/globals"]
   },
-  "include": ["src", "typings", "tests", "jest.config.js", "tools"],
+  "include": ["src", "typings", "tests", "vitest.config.mjs", "tools"],
   "references": []
 }
