@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`export equals1 1`] = `
+exports[`tests/fixtures.test.ts > export > equals1 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         VariableDefinition$1 {
           name: Identifier<"x">,
           node: VariableDeclarator$1,
         },
       ],
       name: "x",
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"x">,
           init: true,
@@ -36,24 +36,24 @@ ScopeManager {
       isTypeVariable: false,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$3,
       isStrict: false,
-      references: [],
+      references: Array [],
       set: Map {
         "const" => ImplicitGlobalConstTypeVariable,
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
       ],
     },
     ModuleScope$2 {
       block: Program$3,
       isStrict: true,
-      references: [
+      references: Array [
         Reference$1,
         Reference$2,
       ],
@@ -62,7 +62,7 @@ ScopeManager {
       },
       type: "module",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$2,
       ],
     },

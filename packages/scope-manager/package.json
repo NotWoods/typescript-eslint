@@ -42,7 +42,7 @@
     "format": "prettier --write \"./**/*.{ts,mts,cts,tsx,js,mjs,cjs,jsx,json,md,css}\" --ignore-path ../../.prettierignore",
     "generate-lib": "npx nx generate-lib",
     "lint": "npx nx lint",
-    "test": "npx nx test --code-coverage",
+    "test": "vitest --coverage",
     "typecheck": "npx nx typecheck"
   },
   "dependencies": {
@@ -56,7 +56,8 @@
     "jest-specific-snapshot": "*",
     "make-dir": "*",
     "pretty-format": "*",
-    "typescript": "*"
+    "typescript": "*",
+    "vitest": "1.6.0"
   },
   "funding": {
     "type": "opencollective",

@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`global-resolution module function 1`] = `
+exports[`tests/fixtures.test.ts > global-resolution > module > function 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         FunctionNameDefinition$1 {
           name: Identifier<"top">,
           node: FunctionDeclaration$1,
         },
       ],
       name: "top",
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"top">,
           isRead: true,
@@ -26,31 +26,31 @@ ScopeManager {
       isTypeVariable: false,
     },
     Variable$3 {
-      defs: [],
+      defs: Array [],
       name: "arguments",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: true,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$2,
       isStrict: false,
-      references: [],
+      references: Array [],
       set: Map {
         "const" => ImplicitGlobalConstTypeVariable,
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
       ],
     },
     ModuleScope$2 {
       block: Program$2,
       isStrict: true,
-      references: [
+      references: Array [
         Reference$1,
       ],
       set: Map {
@@ -58,20 +58,20 @@ ScopeManager {
       },
       type: "module",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$2,
       ],
     },
     FunctionScope$3 {
       block: FunctionDeclaration$1,
       isStrict: true,
-      references: [],
+      references: Array [],
       set: Map {
         "arguments" => Variable$3,
       },
       type: "function",
       upper: ModuleScope$2,
-      variables: [
+      variables: Array [
         Variable$3,
       ],
     },

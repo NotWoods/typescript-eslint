@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`type-annotation parameter 1`] = `
+exports[`tests/fixtures.test.ts > type-annotation > parameter 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         TypeDefinition$1 {
           name: Identifier<"T">,
           node: TSTypeAliasDeclaration$1,
         },
       ],
       name: "T",
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"T">,
           isRead: true,
@@ -26,42 +26,42 @@ ScopeManager {
       isTypeVariable: true,
     },
     Variable$3 {
-      defs: [
+      defs: Array [
         FunctionNameDefinition$2 {
           name: Identifier<"foo">,
           node: FunctionDeclaration$2,
         },
       ],
       name: "foo",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: false,
     },
     Variable$4 {
-      defs: [],
+      defs: Array [],
       name: "arguments",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: true,
     },
     Variable$5 {
-      defs: [
+      defs: Array [
         ParameterDefinition$3 {
           name: Identifier<"a">,
           node: FunctionDeclaration$2,
         },
       ],
       name: "a",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: false,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$3,
       isStrict: false,
-      references: [],
+      references: Array [],
       set: Map {
         "const" => ImplicitGlobalConstTypeVariable,
         "T" => Variable$2,
@@ -69,7 +69,7 @@ ScopeManager {
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
         Variable$2,
         Variable$3,
@@ -78,7 +78,7 @@ ScopeManager {
     FunctionScope$2 {
       block: FunctionDeclaration$2,
       isStrict: false,
-      references: [
+      references: Array [
         Reference$1,
       ],
       set: Map {
@@ -87,7 +87,7 @@ ScopeManager {
       },
       type: "function",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$4,
         Variable$5,
       ],

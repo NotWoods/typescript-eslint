@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ts-module declaration-merging namespace-variable 1`] = `
+exports[`tests/fixtures.test.ts > ts-module > declaration-merging > namespace-variable 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         TSModuleNameDefinition$1 {
           name: Identifier<"Foo">,
           node: TSModuleDeclaration$1,
@@ -16,7 +16,7 @@ ScopeManager {
         },
       ],
       name: "Foo",
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"Foo">,
           init: true,
@@ -40,14 +40,14 @@ ScopeManager {
       isTypeVariable: true,
     },
     Variable$3 {
-      defs: [
+      defs: Array [
         VariableDefinition$3 {
           name: Identifier<"usage">,
           node: VariableDeclarator$4,
         },
       ],
       name: "usage",
-      references: [
+      references: Array [
         Reference$2 {
           identifier: Identifier<"usage">,
           init: true,
@@ -63,11 +63,11 @@ ScopeManager {
       isTypeVariable: false,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$5,
       isStrict: false,
-      references: [
+      references: Array [
         Reference$1,
         Reference$2,
         Reference$3,
@@ -79,7 +79,7 @@ ScopeManager {
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
         Variable$2,
         Variable$3,
@@ -88,11 +88,11 @@ ScopeManager {
     TSModuleScope$2 {
       block: TSModuleDeclaration$1,
       isStrict: true,
-      references: [],
+      references: Array [],
       set: Map {},
       type: "tsModule",
       upper: GlobalScope$1,
-      variables: [],
+      variables: Array [],
     },
   ],
 }

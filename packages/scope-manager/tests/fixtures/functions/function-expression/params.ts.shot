@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`functions function-expression params 1`] = `
+exports[`tests/fixtures.test.ts > functions > function-expression > params 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         VariableDefinition$1 {
           name: Identifier<"outer">,
           node: VariableDeclarator$1,
         },
       ],
       name: "outer",
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"outer">,
           init: true,
@@ -36,14 +36,14 @@ ScopeManager {
       isTypeVariable: false,
     },
     Variable$3 {
-      defs: [
+      defs: Array [
         VariableDefinition$2 {
           name: Identifier<"foo">,
           node: VariableDeclarator$3,
         },
       ],
       name: "foo",
-      references: [
+      references: Array [
         Reference$2 {
           identifier: Identifier<"foo">,
           init: true,
@@ -59,21 +59,21 @@ ScopeManager {
       isTypeVariable: false,
     },
     Variable$4 {
-      defs: [],
+      defs: Array [],
       name: "arguments",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: true,
     },
     Variable$5 {
-      defs: [
+      defs: Array [
         ParameterDefinition$3 {
           name: Identifier<"a">,
           node: FunctionExpression$4,
         },
       ],
       name: "a",
-      references: [
+      references: Array [
         Reference$5 {
           identifier: Identifier<"a">,
           isRead: true,
@@ -95,38 +95,38 @@ ScopeManager {
       isTypeVariable: false,
     },
     Variable$6 {
-      defs: [
+      defs: Array [
         ParameterDefinition$4 {
           name: Identifier<"b">,
           node: FunctionExpression$4,
         },
       ],
       name: "b",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: false,
     },
     Variable$7 {
-      defs: [
+      defs: Array [
         ParameterDefinition$5 {
           name: Identifier<"c">,
           node: FunctionExpression$4,
         },
       ],
       name: "c",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: false,
     },
     Variable$8 {
-      defs: [
+      defs: Array [
         ParameterDefinition$6 {
           name: Identifier<"d">,
           node: FunctionExpression$4,
         },
       ],
       name: "d",
-      references: [
+      references: Array [
         Reference$3 {
           identifier: Identifier<"d">,
           init: true,
@@ -142,14 +142,14 @@ ScopeManager {
       isTypeVariable: false,
     },
     Variable$9 {
-      defs: [
+      defs: Array [
         ParameterDefinition$7 {
           name: Identifier<"e">,
           node: FunctionExpression$4,
         },
       ],
       name: "e",
-      references: [
+      references: Array [
         Reference$4 {
           identifier: Identifier<"e">,
           init: true,
@@ -165,14 +165,14 @@ ScopeManager {
       isTypeVariable: false,
     },
     Variable$10 {
-      defs: [
+      defs: Array [
         ParameterDefinition$8 {
           name: Identifier<"f">,
           node: FunctionExpression$4,
         },
       ],
       name: "f",
-      references: [
+      references: Array [
         Reference$6 {
           identifier: Identifier<"f">,
           init: true,
@@ -188,26 +188,26 @@ ScopeManager {
       isTypeVariable: false,
     },
     Variable$11 {
-      defs: [
+      defs: Array [
         ParameterDefinition$9 {
           name: Identifier<"g">,
           node: FunctionExpression$4,
         },
       ],
       name: "g",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: false,
     },
     Variable$12 {
-      defs: [
+      defs: Array [
         VariableDefinition$10 {
           name: Identifier<"unresolved">,
           node: VariableDeclarator$6,
         },
       ],
       name: "unresolved",
-      references: [
+      references: Array [
         Reference$9 {
           identifier: Identifier<"unresolved">,
           init: true,
@@ -223,11 +223,11 @@ ScopeManager {
       isTypeVariable: false,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$7,
       isStrict: false,
-      references: [
+      references: Array [
         Reference$1,
         Reference$2,
         Reference$9,
@@ -248,7 +248,7 @@ ScopeManager {
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
         Variable$2,
         Variable$3,
@@ -258,7 +258,7 @@ ScopeManager {
     FunctionScope$2 {
       block: FunctionExpression$4,
       isStrict: false,
-      references: [
+      references: Array [
         Reference$3,
         Reference$4,
         Reference$5,
@@ -278,7 +278,7 @@ ScopeManager {
       },
       type: "function",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$4,
         Variable$5,
         Variable$6,

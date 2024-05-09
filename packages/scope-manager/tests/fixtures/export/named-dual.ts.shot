@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`export named-dual 1`] = `
+exports[`tests/fixtures.test.ts > export > named-dual 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         VariableDefinition$1 {
           name: Identifier<"T">,
           node: VariableDeclarator$1,
@@ -16,7 +16,7 @@ ScopeManager {
         },
       ],
       name: "T",
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"T">,
           init: true,
@@ -40,11 +40,11 @@ ScopeManager {
       isTypeVariable: true,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$4,
       isStrict: false,
-      references: [
+      references: Array [
         Reference$1,
         Reference$2,
       ],
@@ -54,7 +54,7 @@ ScopeManager {
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
         Variable$2,
       ],

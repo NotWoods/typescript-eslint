@@ -1,30 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`type-declaration interface-heritage2 1`] = `
+exports[`tests/fixtures.test.ts > type-declaration > interface-heritage2 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         TypeDefinition$1 {
           name: Identifier<"unreferenced">,
           node: TSTypeAliasDeclaration$1,
         },
       ],
       name: "unreferenced",
-      references: [],
+      references: Array [],
       isValueVariable: false,
       isTypeVariable: true,
     },
     Variable$3 {
-      defs: [
+      defs: Array [
         TSModuleNameDefinition$2 {
           name: Identifier<"Member">,
           node: TSModuleDeclaration$2,
         },
       ],
       name: "Member",
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"Member">,
           isRead: true,
@@ -38,35 +38,35 @@ ScopeManager {
       isTypeVariable: true,
     },
     Variable$4 {
-      defs: [
+      defs: Array [
         TypeDefinition$3 {
           name: Identifier<"unreferenced">,
           node: TSTypeAliasDeclaration$3,
         },
       ],
       name: "unreferenced",
-      references: [],
+      references: Array [],
       isValueVariable: false,
       isTypeVariable: true,
     },
     Variable$5 {
-      defs: [
+      defs: Array [
         TypeDefinition$4 {
           name: Identifier<"Foo">,
           node: TSInterfaceDeclaration$4,
         },
       ],
       name: "Foo",
-      references: [],
+      references: Array [],
       isValueVariable: false,
       isTypeVariable: true,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$5,
       isStrict: false,
-      references: [
+      references: Array [
         Reference$1,
       ],
       set: Map {
@@ -77,7 +77,7 @@ ScopeManager {
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
         Variable$2,
         Variable$3,
@@ -87,13 +87,13 @@ ScopeManager {
     TSModuleScope$2 {
       block: TSModuleDeclaration$2,
       isStrict: true,
-      references: [],
+      references: Array [],
       set: Map {
         "unreferenced" => Variable$4,
       },
       type: "tsModule",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$4,
       ],
     },

@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ts-module self-ref 1`] = `
+exports[`tests/fixtures.test.ts > ts-module > self-ref 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         TSModuleNameDefinition$1 {
           name: Identifier<"Foo">,
           node: TSModuleDeclaration$1,
         },
       ],
       name: "Foo",
-      references: [
+      references: Array [
         Reference$2 {
           identifier: Identifier<"Foo">,
           isRead: true,
@@ -26,14 +26,14 @@ ScopeManager {
       isTypeVariable: true,
     },
     Variable$3 {
-      defs: [
+      defs: Array [
         VariableDefinition$2 {
           name: Identifier<"x">,
           node: VariableDeclarator$2,
         },
       ],
       name: "x",
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"x">,
           init: true,
@@ -49,18 +49,18 @@ ScopeManager {
       isTypeVariable: false,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$4,
       isStrict: false,
-      references: [],
+      references: Array [],
       set: Map {
         "const" => ImplicitGlobalConstTypeVariable,
         "Foo" => Variable$2,
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
         Variable$2,
       ],
@@ -68,7 +68,7 @@ ScopeManager {
     TSModuleScope$2 {
       block: TSModuleDeclaration$1,
       isStrict: true,
-      references: [
+      references: Array [
         Reference$1,
         Reference$2,
       ],
@@ -77,7 +77,7 @@ ScopeManager {
       },
       type: "tsModule",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$3,
       ],
     },

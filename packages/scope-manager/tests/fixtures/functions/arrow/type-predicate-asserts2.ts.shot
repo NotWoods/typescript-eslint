@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`functions arrow type-predicate-asserts2 1`] = `
+exports[`tests/fixtures.test.ts > functions > arrow > type-predicate-asserts2 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         TypeDefinition$1 {
           name: Identifier<"T">,
           node: TSTypeAliasDeclaration$1,
         },
       ],
       name: "T",
-      references: [
+      references: Array [
         Reference$3 {
           identifier: Identifier<"T">,
           isRead: true,
@@ -26,14 +26,14 @@ ScopeManager {
       isTypeVariable: true,
     },
     Variable$3 {
-      defs: [
+      defs: Array [
         VariableDefinition$2 {
           name: Identifier<"foo">,
           node: VariableDeclarator$2,
         },
       ],
       name: "foo",
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"foo">,
           init: true,
@@ -49,14 +49,14 @@ ScopeManager {
       isTypeVariable: false,
     },
     Variable$4 {
-      defs: [
+      defs: Array [
         ParameterDefinition$3 {
           name: Identifier<"arg">,
           node: ArrowFunctionExpression$3,
         },
       ],
       name: "arg",
-      references: [
+      references: Array [
         Reference$2 {
           identifier: Identifier<"arg">,
           isRead: true,
@@ -70,11 +70,11 @@ ScopeManager {
       isTypeVariable: false,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$4,
       isStrict: false,
-      references: [
+      references: Array [
         Reference$1,
       ],
       set: Map {
@@ -84,7 +84,7 @@ ScopeManager {
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
         Variable$2,
         Variable$3,
@@ -93,7 +93,7 @@ ScopeManager {
     FunctionScope$2 {
       block: ArrowFunctionExpression$3,
       isStrict: false,
-      references: [
+      references: Array [
         Reference$2,
         Reference$3,
       ],
@@ -102,7 +102,7 @@ ScopeManager {
       },
       type: "function",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$4,
       ],
     },

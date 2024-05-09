@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`import namespace 1`] = `
+exports[`tests/fixtures.test.ts > import > namespace 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         ImportBindingDefinition$1 {
           name: Identifier<"v">,
           node: ImportNamespaceSpecifier$1,
         },
       ],
       name: "v",
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"v">,
           isRead: true,
@@ -34,36 +34,36 @@ ScopeManager {
       isTypeVariable: true,
     },
     Variable$3 {
-      defs: [
+      defs: Array [
         TypeDefinition$2 {
           name: Identifier<"T">,
           node: TSTypeAliasDeclaration$2,
         },
       ],
       name: "T",
-      references: [],
+      references: Array [],
       isValueVariable: false,
       isTypeVariable: true,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$3,
       isStrict: false,
-      references: [],
+      references: Array [],
       set: Map {
         "const" => ImplicitGlobalConstTypeVariable,
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
       ],
     },
     ModuleScope$2 {
       block: Program$3,
       isStrict: true,
-      references: [
+      references: Array [
         Reference$1,
         Reference$2,
       ],
@@ -73,7 +73,7 @@ ScopeManager {
       },
       type: "module",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$2,
         Variable$3,
       ],

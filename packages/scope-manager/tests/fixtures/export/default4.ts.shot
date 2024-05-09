@@ -1,50 +1,50 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`export default4 1`] = `
+exports[`tests/fixtures.test.ts > export > default4 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [],
+      defs: Array [],
       name: "arguments",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: true,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$1,
       isStrict: false,
-      references: [],
+      references: Array [],
       set: Map {
         "const" => ImplicitGlobalConstTypeVariable,
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
       ],
     },
     ModuleScope$2 {
       block: Program$1,
       isStrict: true,
-      references: [],
+      references: Array [],
       set: Map {},
       type: "module",
       upper: GlobalScope$1,
-      variables: [],
+      variables: Array [],
     },
     FunctionScope$3 {
       block: FunctionDeclaration$2,
       isStrict: true,
-      references: [],
+      references: Array [],
       set: Map {
         "arguments" => Variable$2,
       },
       type: "function",
       upper: ModuleScope$2,
-      variables: [
+      variables: Array [
         Variable$2,
       ],
     },

@@ -1,30 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`jsx factory jsxPragma 1`] = `
+exports[`tests/fixtures.test.ts > jsx > factory > jsxPragma 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         ImportBindingDefinition$1 {
           name: Identifier<"React">,
           node: ImportDefaultSpecifier$1,
         },
       ],
       name: "React",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: true,
     },
     Variable$3 {
-      defs: [
+      defs: Array [
         ImportBindingDefinition$2 {
           name: Identifier<"h">,
           node: ImportSpecifier$2,
         },
       ],
       name: "h",
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"h">,
           isRead: true,
@@ -38,24 +38,24 @@ ScopeManager {
       isTypeVariable: true,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$3,
       isStrict: false,
-      references: [],
+      references: Array [],
       set: Map {
         "const" => ImplicitGlobalConstTypeVariable,
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
       ],
     },
     ModuleScope$2 {
       block: Program$3,
       isStrict: true,
-      references: [
+      references: Array [
         Reference$1,
         Reference$2 {
           identifier: JSXIdentifier$4,
@@ -72,7 +72,7 @@ ScopeManager {
       },
       type: "module",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$2,
         Variable$3,
       ],

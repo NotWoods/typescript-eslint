@@ -1,42 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ts-enum literal-member-ref 1`] = `
+exports[`tests/fixtures.test.ts > ts-enum > literal-member-ref 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         TSEnumNameDefinition$1 {
           name: Identifier<"Foo">,
           node: TSEnumDeclaration$1,
         },
       ],
       name: "Foo",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: true,
     },
     Variable$3 {
-      defs: [
+      defs: Array [
         TSEnumNameDefinition$2 {
           name: Identifier<"Foo">,
           node: TSEnumDeclaration$1,
         },
       ],
       name: "Foo",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: true,
     },
     Variable$4 {
-      defs: [
+      defs: Array [
         TSEnumMemberDefinition$3 {
           name: Literal$2,
           node: TSEnumMember$3,
         },
       ],
       name: "a",
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"a">,
           isRead: true,
@@ -50,30 +50,30 @@ ScopeManager {
       isTypeVariable: true,
     },
     Variable$5 {
-      defs: [
+      defs: Array [
         TSEnumMemberDefinition$4 {
           name: Identifier<"b">,
           node: TSEnumMember$4,
         },
       ],
       name: "b",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: true,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$5,
       isStrict: false,
-      references: [],
+      references: Array [],
       set: Map {
         "const" => ImplicitGlobalConstTypeVariable,
         "Foo" => Variable$2,
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
         Variable$2,
       ],
@@ -81,7 +81,7 @@ ScopeManager {
     TSEnumScope$2 {
       block: TSEnumDeclaration$1,
       isStrict: true,
-      references: [
+      references: Array [
         Reference$1,
       ],
       set: Map {
@@ -91,7 +91,7 @@ ScopeManager {
       },
       type: "tsEnum",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$3,
         Variable$4,
         Variable$5,

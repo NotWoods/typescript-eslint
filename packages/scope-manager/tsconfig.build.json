@@ -6,7 +6,7 @@
     "rootDir": "./src",
     "resolveJsonModule": true,
     "declaration": true,
-    "types": ["node", "jest"]
+    "types": ["node"]
   },
   "include": ["src", "typings"],
   "exclude": ["**/*.spec.ts", "**/*.test.ts"],

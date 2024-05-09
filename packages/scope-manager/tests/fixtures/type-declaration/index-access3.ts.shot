@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`type-declaration index-access3 1`] = `
+exports[`tests/fixtures.test.ts > type-declaration > index-access3 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         TypeDefinition$1 {
           name: Identifier<"T">,
           node: TSTypeAliasDeclaration$1,
         },
       ],
       name: "T",
-      references: [
+      references: Array [
         Reference$3 {
           identifier: Identifier<"T">,
           isRead: true,
@@ -26,14 +26,14 @@ ScopeManager {
       isTypeVariable: true,
     },
     Variable$3 {
-      defs: [
+      defs: Array [
         VariableDefinition$2 {
           name: Identifier<"k">,
           node: VariableDeclarator$2,
         },
       ],
       name: "k",
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"k">,
           init: true,
@@ -57,23 +57,23 @@ ScopeManager {
       isTypeVariable: false,
     },
     Variable$4 {
-      defs: [
+      defs: Array [
         TypeDefinition$3 {
           name: Identifier<"A">,
           node: TSTypeAliasDeclaration$4,
         },
       ],
       name: "A",
-      references: [],
+      references: Array [],
       isValueVariable: false,
       isTypeVariable: true,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$5,
       isStrict: false,
-      references: [
+      references: Array [
         Reference$1,
         Reference$2,
         Reference$3,
@@ -86,7 +86,7 @@ ScopeManager {
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
         Variable$2,
         Variable$3,

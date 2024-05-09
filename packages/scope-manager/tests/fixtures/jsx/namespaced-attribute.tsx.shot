@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`jsx namespaced-attribute 1`] = `
+exports[`tests/fixtures.test.ts > jsx > namespaced-attribute 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         ImportBindingDefinition$1 {
           name: Identifier<"React">,
           node: ImportNamespaceSpecifier$1,
         },
       ],
       name: "React",
-      references: [
+      references: Array [
         Reference$2 {
           identifier: Identifier<"React">,
           isRead: true,
@@ -26,14 +26,14 @@ ScopeManager {
       isTypeVariable: true,
     },
     Variable$3 {
-      defs: [
+      defs: Array [
         VariableDefinition$2 {
           name: Identifier<"x">,
           node: VariableDeclarator$2,
         },
       ],
       name: "x",
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"x">,
           init: true,
@@ -49,14 +49,14 @@ ScopeManager {
       isTypeVariable: false,
     },
     Variable$4 {
-      defs: [
+      defs: Array [
         VariableDefinition$3 {
           name: Identifier<"y">,
           node: VariableDeclarator$4,
         },
       ],
       name: "y",
-      references: [
+      references: Array [
         Reference$4 {
           identifier: Identifier<"y">,
           init: true,
@@ -72,14 +72,14 @@ ScopeManager {
       isTypeVariable: false,
     },
     Variable$5 {
-      defs: [
+      defs: Array [
         TypeDefinition$4 {
           name: Identifier<"FooProps">,
           node: TSInterfaceDeclaration$6,
         },
       ],
       name: "FooProps",
-      references: [
+      references: Array [
         Reference$6 {
           identifier: Identifier<"FooProps">,
           isRead: true,
@@ -93,14 +93,14 @@ ScopeManager {
       isTypeVariable: true,
     },
     Variable$6 {
-      defs: [
+      defs: Array [
         FunctionNameDefinition$5 {
           name: Identifier<"Foo">,
           node: FunctionDeclaration$7,
         },
       ],
       name: "Foo",
-      references: [
+      references: Array [
         Reference$3 {
           identifier: JSXIdentifier$8,
           isRead: true,
@@ -122,21 +122,21 @@ ScopeManager {
       isTypeVariable: false,
     },
     Variable$7 {
-      defs: [],
+      defs: Array [],
       name: "arguments",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: true,
     },
     Variable$8 {
-      defs: [
+      defs: Array [
         ParameterDefinition$6 {
           name: Identifier<"props">,
           node: FunctionDeclaration$7,
         },
       ],
       name: "props",
-      references: [
+      references: Array [
         Reference$7 {
           identifier: Identifier<"props">,
           isRead: true,
@@ -150,11 +150,11 @@ ScopeManager {
       isTypeVariable: false,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$10,
       isStrict: false,
-      references: [
+      references: Array [
         Reference$1,
         Reference$2,
         Reference$3,
@@ -171,7 +171,7 @@ ScopeManager {
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
         Variable$2,
         Variable$3,
@@ -183,7 +183,7 @@ ScopeManager {
     FunctionScope$2 {
       block: FunctionDeclaration$7,
       isStrict: false,
-      references: [
+      references: Array [
         Reference$6,
         Reference$7,
       ],
@@ -193,7 +193,7 @@ ScopeManager {
       },
       type: "function",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$7,
         Variable$8,
       ],

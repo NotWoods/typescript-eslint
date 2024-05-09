@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`global-resolution module variable-decl-const 1`] = `
+exports[`tests/fixtures.test.ts > global-resolution > module > variable-decl-const 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         VariableDefinition$1 {
           name: Identifier<"top">,
           node: VariableDeclarator$1,
         },
       ],
       name: "top",
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"top">,
           init: true,
@@ -36,24 +36,24 @@ ScopeManager {
       isTypeVariable: false,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$3,
       isStrict: false,
-      references: [],
+      references: Array [],
       set: Map {
         "const" => ImplicitGlobalConstTypeVariable,
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
       ],
     },
     ModuleScope$2 {
       block: Program$3,
       isStrict: true,
-      references: [
+      references: Array [
         Reference$1,
         Reference$2,
       ],
@@ -62,18 +62,18 @@ ScopeManager {
       },
       type: "module",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$2,
       ],
     },
     FunctionScope$3 {
       block: ArrowFunctionExpression$2,
       isStrict: true,
-      references: [],
+      references: Array [],
       set: Map {},
       type: "function",
       upper: ModuleScope$2,
-      variables: [],
+      variables: Array [],
     },
   ],
 }

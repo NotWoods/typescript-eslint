@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`global-resolution script class 1`] = `
+exports[`tests/fixtures.test.ts > global-resolution > script > class 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         ClassNameDefinition$1 {
           name: Identifier<"Foo">,
           node: ClassDeclaration$1,
         },
       ],
       name: "Foo",
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"Foo">,
           isRead: true,
@@ -26,23 +26,23 @@ ScopeManager {
       isTypeVariable: true,
     },
     Variable$3 {
-      defs: [
+      defs: Array [
         ClassNameDefinition$2 {
           name: Identifier<"Foo">,
           node: ClassDeclaration$1,
         },
       ],
       name: "Foo",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: true,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$2,
       isStrict: false,
-      references: [
+      references: Array [
         Reference$1,
       ],
       set: Map {
@@ -51,7 +51,7 @@ ScopeManager {
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
         Variable$2,
       ],
@@ -59,13 +59,13 @@ ScopeManager {
     ClassScope$2 {
       block: ClassDeclaration$1,
       isStrict: true,
-      references: [],
+      references: Array [],
       set: Map {
         "Foo" => Variable$3,
       },
       type: "class",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$3,
       ],
     },

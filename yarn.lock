@@ -5705,6 +5705,7 @@ __metadata:
     make-dir: "*"
     pretty-format: "*"
     typescript: "*"
+    vitest: 1.6.0
   languageName: unknown
   linkType: soft
 

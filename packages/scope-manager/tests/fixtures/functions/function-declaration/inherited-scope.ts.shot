@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`functions function-declaration inherited-scope 1`] = `
+exports[`tests/fixtures.test.ts > functions > function-declaration > inherited-scope 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         VariableDefinition$1 {
           name: Identifier<"parentScoped">,
           node: VariableDeclarator$1,
         },
       ],
       name: "parentScoped",
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"parentScoped">,
           init: true,
@@ -36,30 +36,30 @@ ScopeManager {
       isTypeVariable: false,
     },
     Variable$3 {
-      defs: [
+      defs: Array [
         FunctionNameDefinition$2 {
           name: Identifier<"foo">,
           node: FunctionDeclaration$3,
         },
       ],
       name: "foo",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: false,
     },
     Variable$4 {
-      defs: [],
+      defs: Array [],
       name: "arguments",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: true,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$4,
       isStrict: false,
-      references: [
+      references: Array [
         Reference$1,
       ],
       set: Map {
@@ -69,7 +69,7 @@ ScopeManager {
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
         Variable$2,
         Variable$3,
@@ -78,7 +78,7 @@ ScopeManager {
     FunctionScope$2 {
       block: FunctionDeclaration$3,
       isStrict: false,
-      references: [
+      references: Array [
         Reference$2,
       ],
       set: Map {
@@ -86,7 +86,7 @@ ScopeManager {
       },
       type: "function",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$4,
       ],
     },

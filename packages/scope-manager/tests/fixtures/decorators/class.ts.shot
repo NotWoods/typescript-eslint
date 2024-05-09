@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`decorators class 1`] = `
+exports[`tests/fixtures.test.ts > decorators > class 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         FunctionNameDefinition$1 {
           name: Identifier<"decorator">,
           node: FunctionDeclaration$1,
         },
       ],
       name: "decorator",
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"decorator">,
           isRead: true,
@@ -26,42 +26,42 @@ ScopeManager {
       isTypeVariable: false,
     },
     Variable$3 {
-      defs: [],
+      defs: Array [],
       name: "arguments",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: true,
     },
     Variable$4 {
-      defs: [
+      defs: Array [
         ClassNameDefinition$2 {
           name: Identifier<"Foo">,
           node: ClassDeclaration$2,
         },
       ],
       name: "Foo",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: true,
     },
     Variable$5 {
-      defs: [
+      defs: Array [
         ClassNameDefinition$3 {
           name: Identifier<"Foo">,
           node: ClassDeclaration$2,
         },
       ],
       name: "Foo",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: true,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$3,
       isStrict: false,
-      references: [
+      references: Array [
         Reference$1,
       ],
       set: Map {
@@ -71,7 +71,7 @@ ScopeManager {
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
         Variable$2,
         Variable$4,
@@ -80,26 +80,26 @@ ScopeManager {
     FunctionScope$2 {
       block: FunctionDeclaration$1,
       isStrict: false,
-      references: [],
+      references: Array [],
       set: Map {
         "arguments" => Variable$3,
       },
       type: "function",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$3,
       ],
     },
     ClassScope$3 {
       block: ClassDeclaration$2,
       isStrict: true,
-      references: [],
+      references: Array [],
       set: Map {
         "Foo" => Variable$5,
       },
       type: "class",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$5,
       ],
     },

@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`decorators class-deco-with-object-param 1`] = `
+exports[`tests/fixtures.test.ts > decorators > class-deco-with-object-param 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         FunctionNameDefinition$1 {
           name: Identifier<"deco">,
           node: TSDeclareFunction$1,
         },
       ],
       name: "deco",
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"deco">,
           isRead: true,
@@ -26,66 +26,66 @@ ScopeManager {
       isTypeVariable: false,
     },
     Variable$3 {
-      defs: [],
+      defs: Array [],
       name: "arguments",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: true,
     },
     Variable$4 {
-      defs: [
+      defs: Array [
         ParameterDefinition$2 {
           name: Identifier<"param">,
           node: TSDeclareFunction$1,
         },
       ],
       name: "param",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: false,
     },
     Variable$5 {
-      defs: [
+      defs: Array [
         ParameterDefinition$3 {
           name: Identifier<"param">,
           node: TSFunctionType$2,
         },
       ],
       name: "param",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: false,
     },
     Variable$6 {
-      defs: [
+      defs: Array [
         ClassNameDefinition$4 {
           name: Identifier<"Foo">,
           node: ClassDeclaration$3,
         },
       ],
       name: "Foo",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: true,
     },
     Variable$7 {
-      defs: [
+      defs: Array [
         ClassNameDefinition$5 {
           name: Identifier<"Foo">,
           node: ClassDeclaration$3,
         },
       ],
       name: "Foo",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: true,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$4,
       isStrict: false,
-      references: [
+      references: Array [
         Reference$1,
       ],
       set: Map {
@@ -95,7 +95,7 @@ ScopeManager {
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
         Variable$2,
         Variable$6,
@@ -104,14 +104,14 @@ ScopeManager {
     FunctionScope$2 {
       block: TSDeclareFunction$1,
       isStrict: false,
-      references: [],
+      references: Array [],
       set: Map {
         "arguments" => Variable$3,
         "param" => Variable$4,
       },
       type: "function",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$3,
         Variable$4,
       ],
@@ -119,26 +119,26 @@ ScopeManager {
     FunctionTypeScope$3 {
       block: TSFunctionType$2,
       isStrict: true,
-      references: [],
+      references: Array [],
       set: Map {
         "param" => Variable$5,
       },
       type: "functionType",
       upper: FunctionScope$2,
-      variables: [
+      variables: Array [
         Variable$5,
       ],
     },
     ClassScope$4 {
       block: ClassDeclaration$3,
       isStrict: true,
-      references: [],
+      references: Array [],
       set: Map {
         "Foo" => Variable$7,
       },
       type: "class",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$7,
       ],
     },

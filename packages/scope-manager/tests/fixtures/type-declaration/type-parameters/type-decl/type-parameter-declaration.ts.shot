@@ -1,51 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`type-declaration type-parameters type-decl type-parameter-declaration 1`] = `
+exports[`tests/fixtures.test.ts > type-declaration > type-parameters > type-decl > type-parameter-declaration 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         TypeDefinition$1 {
           name: Identifier<"Foo">,
           node: TSTypeAliasDeclaration$1,
         },
       ],
       name: "Foo",
-      references: [],
+      references: Array [],
       isValueVariable: false,
       isTypeVariable: true,
     },
     Variable$3 {
-      defs: [
+      defs: Array [
         TypeDefinition$2 {
           name: Identifier<"T">,
           node: TSTypeParameter$2,
         },
       ],
       name: "T",
-      references: [],
+      references: Array [],
       isValueVariable: false,
       isTypeVariable: true,
     },
     Variable$4 {
-      defs: [
+      defs: Array [
         TypeDefinition$3 {
           name: Identifier<"Unresolved">,
           node: TSTypeAliasDeclaration$3,
         },
       ],
       name: "Unresolved",
-      references: [],
+      references: Array [],
       isValueVariable: false,
       isTypeVariable: true,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$4,
       isStrict: false,
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"T">,
           isRead: true,
@@ -62,7 +62,7 @@ ScopeManager {
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
         Variable$2,
         Variable$4,
@@ -71,13 +71,13 @@ ScopeManager {
     TypeScope$2 {
       block: TSTypeAliasDeclaration$1,
       isStrict: true,
-      references: [],
+      references: Array [],
       set: Map {
         "T" => Variable$3,
       },
       type: "type",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$3,
       ],
     },

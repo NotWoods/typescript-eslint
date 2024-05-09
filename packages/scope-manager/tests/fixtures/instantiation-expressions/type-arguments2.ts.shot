@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`instantiation-expressions type-arguments2 1`] = `
+exports[`tests/fixtures.test.ts > instantiation-expressions > type-arguments2 1`] = `
 ScopeManager {
-  variables: [
+  variables: Array [
     ImplicitGlobalConstTypeVariable,
     Variable$2 {
-      defs: [
+      defs: Array [
         FunctionNameDefinition$1 {
           name: Identifier<"makeBox">,
           node: FunctionDeclaration$1,
         },
       ],
       name: "makeBox",
-      references: [
+      references: Array [
         Reference$3 {
           identifier: Identifier<"makeBox">,
           isRead: true,
@@ -34,21 +34,21 @@ ScopeManager {
       isTypeVariable: false,
     },
     Variable$3 {
-      defs: [],
+      defs: Array [],
       name: "arguments",
-      references: [],
+      references: Array [],
       isValueVariable: true,
       isTypeVariable: true,
     },
     Variable$4 {
-      defs: [
+      defs: Array [
         ParameterDefinition$2 {
           name: Identifier<"value">,
           node: FunctionDeclaration$1,
         },
       ],
       name: "value",
-      references: [
+      references: Array [
         Reference$2 {
           identifier: Identifier<"value">,
           isRead: true,
@@ -62,14 +62,14 @@ ScopeManager {
       isTypeVariable: false,
     },
     Variable$5 {
-      defs: [
+      defs: Array [
         TypeDefinition$3 {
           name: Identifier<"T">,
           node: TSTypeParameter$2,
         },
       ],
       name: "T",
-      references: [
+      references: Array [
         Reference$1 {
           identifier: Identifier<"T">,
           isRead: true,
@@ -83,26 +83,26 @@ ScopeManager {
       isTypeVariable: true,
     },
     Variable$6 {
-      defs: [
+      defs: Array [
         TypeDefinition$4 {
           name: Identifier<"BoxFunc">,
           node: TSTypeAliasDeclaration$3,
         },
       ],
       name: "BoxFunc",
-      references: [],
+      references: Array [],
       isValueVariable: false,
       isTypeVariable: true,
     },
     Variable$7 {
-      defs: [
+      defs: Array [
         TypeDefinition$5 {
           name: Identifier<"T">,
           node: TSTypeParameter$4,
         },
       ],
       name: "T",
-      references: [
+      references: Array [
         Reference$4 {
           identifier: Identifier<"T">,
           isRead: true,
@@ -116,14 +116,14 @@ ScopeManager {
       isTypeVariable: true,
     },
     Variable$8 {
-      defs: [
+      defs: Array [
         VariableDefinition$6 {
           name: Identifier<"makeStringBox">,
           node: VariableDeclarator$5,
         },
       ],
       name: "makeStringBox",
-      references: [
+      references: Array [
         Reference$5 {
           identifier: Identifier<"makeStringBox">,
           init: true,
@@ -139,11 +139,11 @@ ScopeManager {
       isTypeVariable: false,
     },
   ],
-  scopes: [
+  scopes: Array [
     GlobalScope$1 {
       block: Program$7,
       isStrict: false,
-      references: [
+      references: Array [
         Reference$5,
         Reference$6,
       ],
@@ -155,7 +155,7 @@ ScopeManager {
       },
       type: "global",
       upper: null,
-      variables: [
+      variables: Array [
         ImplicitGlobalConstTypeVariable,
         Variable$2,
         Variable$6,
@@ -165,7 +165,7 @@ ScopeManager {
     FunctionScope$2 {
       block: FunctionDeclaration$1,
       isStrict: false,
-      references: [
+      references: Array [
         Reference$1,
         Reference$2,
       ],
@@ -176,7 +176,7 @@ ScopeManager {
       },
       type: "function",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$3,
         Variable$4,
         Variable$5,
@@ -185,7 +185,7 @@ ScopeManager {
     TypeScope$3 {
       block: TSTypeAliasDeclaration$3,
       isStrict: true,
-      references: [
+      references: Array [
         Reference$3,
         Reference$4,
       ],
@@ -194,7 +194,7 @@ ScopeManager {
       },
       type: "type",
       upper: GlobalScope$1,
-      variables: [
+      variables: Array [
         Variable$7,
       ],
     },
