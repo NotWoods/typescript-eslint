@@ -7,13 +7,13 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Jest Test Current eslint-plugin Rule",
+      "name": "Vitest Test Current eslint-plugin Rule",
       "cwd": "${workspaceFolder}/packages/eslint-plugin/",
-      "program": "${workspaceFolder}/node_modules/jest/bin/jest.js",
+      "program": "${workspaceFolder}/node_modules/vitest/bin/vitest.js",
       "args": [
         "--runInBand",
         "--no-cache",
-        "--no-coverage",
+        "--coverage.enabled=false",
         "${fileBasenameNoExtension}"
       ],
       "sourceMaps": true,
@@ -41,13 +41,13 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Jest Test Current eslint-plugin-internal Rule",
+      "name": "Vitest Test Current eslint-plugin-internal Rule",
       "cwd": "${workspaceFolder}/packages/eslint-plugin-internal/",
-      "program": "${workspaceFolder}/node_modules/jest/bin/jest.js",
+      "program": "${workspaceFolder}/node_modules/vitest/bin/vitest.js",
       "args": [
         "--runInBand",
         "--no-cache",
-        "--no-coverage",
+        "--coverage.enabled=false",
         "${fileBasenameNoExtension}"
       ],
       "sourceMaps": true,
@@ -77,11 +77,11 @@
       "request": "launch",
       "name": "Run currently opened rule-tester test",
       "cwd": "${workspaceFolder}/packages/rule-tester/",
-      "program": "${workspaceFolder}/node_modules/jest/bin/jest.js",
+      "program": "${workspaceFolder}/node_modules/vitest/bin/vitest.js",
       "args": [
         "--runInBand",
         "--no-cache",
-        "--no-coverage",
+        "--coverage.enabled=false",
         "${fileBasename}"
       ],
       "sourceMaps": true,
@@ -113,11 +113,11 @@
       "request": "launch",
       "name": "Run currently opened typescript-estree test",
       "cwd": "${workspaceFolder}/packages/typescript-estree/",
-      "program": "${workspaceFolder}/node_modules/jest/bin/jest.js",
+      "program": "${workspaceFolder}/node_modules/vitest/bin/vitest.js",
       "args": [
         "--runInBand",
         "--no-cache",
-        "--no-coverage",
+        "--coverage.enabled=false",
         "${fileBasename}"
       ],
       "sourceMaps": true,
@@ -147,11 +147,11 @@
       "request": "launch",
       "name": "Run currently opened parser test",
       "cwd": "${workspaceFolder}/packages/parser/",
-      "program": "${workspaceFolder}/node_modules/jest/bin/jest.js",
+      "program": "${workspaceFolder}/node_modules/vitest/bin/vitest.js",
       "args": [
         "--runInBand",
         "--no-cache",
-        "--no-coverage",
+        "--coverage.enabled=false",
         "${fileBasename}"
       ],
       "sourceMaps": true,
@@ -181,11 +181,11 @@
       "request": "launch",
       "name": "Run currently opened utils test",
       "cwd": "${workspaceFolder}/packages/utils/",
-      "program": "${workspaceFolder}/node_modules/jest/bin/jest.js",
+      "program": "${workspaceFolder}/node_modules/vitest/bin/vitest.js",
       "args": [
         "--runInBand",
         "--no-cache",
-        "--no-coverage",
+        "--coverage.enabled=false",
         "${fileBasenameNoExtension}"
       ],
       "sourceMaps": true,
@@ -215,11 +215,11 @@
       "request": "launch",
       "name": "Run currently opened type-utils test",
       "cwd": "${workspaceFolder}/packages/type-utils/",
-      "program": "${workspaceFolder}/node_modules/jest/bin/jest.js",
+      "program": "${workspaceFolder}/node_modules/vitest/bin/vitest.js",
       "args": [
         "--runInBand",
         "--no-cache",
-        "--no-coverage",
+        "--coverage.enabled=false",
         "${fileBasenameNoExtension}"
       ],
       "sourceMaps": true,
@@ -249,11 +249,11 @@
       "request": "launch",
       "name": "Run currently opened scope-manager test",
       "cwd": "${workspaceFolder}/packages/scope-manager/",
-      "program": "${workspaceFolder}/node_modules/jest/bin/jest.js",
+      "program": "${workspaceFolder}/node_modules/vitest/bin/vitest.js",
       "args": [
         "--runInBand",
         "--no-cache",
-        "--no-coverage",
+        "--coverage.enabled=false",
         "${fileBasename}"
       ],
       "sourceMaps": true,
@@ -283,11 +283,11 @@
       "request": "launch",
       "name": "Run currently opened ast-spec test",
       "cwd": "${workspaceFolder}/packages/ast-spec/",
-      "program": "${workspaceFolder}/node_modules/jest/bin/jest.js",
+      "program": "${workspaceFolder}/node_modules/vitest/bin/vitest.js",
       "args": [
         "--runInBand",
         "--no-cache",
-        "--no-coverage",
+        "--coverage.enabled=false",
         "${fileBasename}"
       ],
       "sourceMaps": true,

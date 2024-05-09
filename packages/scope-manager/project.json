@@ -55,9 +55,9 @@
       "outputs": ["{options.outputFile}"]
     },
     "test": {
-      "executor": "@nx/jest:jest",
+      "executor": "@nx/vite:test",
       "options": {
-        "jestConfig": "packages/scope-manager/jest.config.js"
+        "config": "packages/scope-manager/vitest.config.mjs"
       }
     },
     "generate-lib": {

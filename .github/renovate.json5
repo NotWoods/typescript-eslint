@@ -13,7 +13,7 @@
     '@nrwl/devkit',
     '@nx/devkit',
     '@nx/jest',
-    '@nx/jest',
+    '@nx/vite',
     '@nrwl/nx-cloud',
     'nx-cloud',
     '@nrwl/tao',
@@ -74,6 +74,10 @@
       matchPackageNames: ['ts-jest', 'pretty-format'],
       matchPackagePrefixes: ['@types/jest', 'jest', '@jest'],
       groupName: 'jest',
+    },
+    {
+      matchPackagePrefixes: ['vitest', '@vitest'],
+      groupName: 'vitest',
     },
     {
       matchPackageNames: ['eslint'],

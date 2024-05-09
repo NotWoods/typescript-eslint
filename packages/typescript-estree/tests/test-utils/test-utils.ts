@@ -14,12 +14,12 @@ export function parseCodeAndGenerateServices(
 }
 
 /**
- * Returns a function which can be used as the callback of a Jest test() block,
+ * Returns a function which can be used as the callback of a Vitest test() block,
  * and which performs an assertion on the snapshot for the given code and config.
  * @param code The source code to parse
  * @param config the parser configuration
  * @param generateServices Flag determining whether to generate ast maps and program or not
- * @returns callback for Jest it() block
+ * @returns callback for Vitest it() block
  */
 export function createSnapshotTestBlock(
   code: string,

@@ -26,23 +26,21 @@
       "inputs": [
         "default",
         "^production",
-        "{workspaceRoot}/jest.config.js",
-        "{workspaceRoot}/jest.config.base.js"
+        "{workspaceRoot}/vitest.config.base.(m)?js"
       ],
       "outputs": ["{projectRoot}/coverage"],
       "cache": true
     },
-    "@nx/jest:jest": {
+    "@nx/vite:test": {
       "inputs": [
         "default",
         "^production",
-        "{workspaceRoot}/jest.config.js",
-        "{workspaceRoot}/jest.config.base.js"
+        "{workspaceRoot}/vitest.config.base.(m)?js"
       ],
       "outputs": ["{projectRoot}/coverage"],
       "cache": true,
       "options": {
-        "jestConfig": "{projectRoot}/jest.config.js",
+        "config": "{projectRoot}/vitest.config.(m)?js",
         "passWithNoTests": true
       },
       "configurations": {
@@ -85,7 +83,7 @@
       "default",
       "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
       "!{projectRoot}/tsconfig.spec.json",
-      "!{projectRoot}/jest.config.[jt]s",
+      "!{projectRoot}/vitest.config.(m)?[jt]s",
       "!{projectRoot}/src/test-setup.[jt]s"
     ]
   }
