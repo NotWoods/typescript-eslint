@@ -48,7 +48,7 @@
     "postclean": "rimraf dist && rimraf _ts4.3 && rimraf coverage",
     "format": "prettier --write \"./**/*.{ts,mts,cts,tsx,js,mjs,cjs,jsx,json,md,css}\" --ignore-path ../../.prettierignore",
     "lint": "nx lint",
-    "test": "jest --coverage --passWithNoTests",
+    "test": "vitest --coverage --passWithNoTests",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "peerDependencies": {
@@ -61,10 +61,10 @@
   },
   "devDependencies": {
     "downlevel-dts": "*",
-    "jest": "29.7.0",
     "prettier": "^3.2.5",
     "rimraf": "*",
-    "typescript": "*"
+    "typescript": "*",
+    "vitest": "1.6.0"
   },
   "peerDependenciesMeta": {
     "typescript": {
