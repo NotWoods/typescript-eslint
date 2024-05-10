@@ -26,7 +26,7 @@
       "inputs": [
         "default",
         "^production",
-        "{workspaceRoot}/vitest.config.base.(m)?js"
+        "{workspaceRoot}/vitest.config.base.mjs"
       ],
       "outputs": ["{projectRoot}/coverage"],
       "cache": true
@@ -35,12 +35,12 @@
       "inputs": [
         "default",
         "^production",
-        "{workspaceRoot}/vitest.config.base.(m)?js"
+        "{workspaceRoot}/vitest.config.base.mjs"
       ],
       "outputs": ["{projectRoot}/coverage"],
       "cache": true,
       "options": {
-        "config": "{projectRoot}/vitest.config.(m)?js",
+        "config": "{projectRoot}/vitest.config.mjs",
         "passWithNoTests": true
       },
       "configurations": {

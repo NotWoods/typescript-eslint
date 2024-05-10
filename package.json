@@ -121,9 +121,6 @@
     "yargs": "17.7.2"
   },
   "resolutions": {
-    "@jest/create-cache-key-function": "^29",
-    "@jest/reporters": "^29",
-    "@jest/test-result": "^29",
     "@microsoft/api-extractor@^7.38.0": "patch:@microsoft/api-extractor@npm%3A7.38.0#./.yarn/patches/@microsoft-api-extractor-npm-7.38.0-955f1e0725.patch",
     "@types/eslint-scope": "link:./tools/dummypkg",
     "@types/eslint": "link:./tools/dummypkg",
@@ -132,9 +129,6 @@
     "@types/react": "^18.2.14",
     "eslint": "8.57.0",
     "eslint-visitor-keys": "^3.4.1",
-    "jest-config": "^29",
-    "jest-resolve": "^29",
-    "jest-util": "^29",
     "pretty-format": "^29",
     "react-split-pane@^0.1.92": "patch:react-split-pane@npm%3A0.1.92#./.yarn/patches/react-split-pane-npm-0.1.92-93dbf51dff.patch",
     "tsx": "^4.7.2",
